@@ -12,9 +12,6 @@ EXCLUDE_PATTERN=(
   "--exclude=google-chrome"
   "--exclude=chromium"
 
-	# Discord
-	"--exclude=discord"
-
   # Code editors
   "--exclude=VSCodium/Cache"
   "--exclude=VSCodium/CachedData"
@@ -23,9 +20,7 @@ EXCLUDE_PATTERN=(
   "--exclude=VSCodium/logs"
 
   # Apps
-  "--exclude=discord/Cache"
-  "--exclude=discord/Code Cache"
-  "--exclude=discord/GPUCache"
+	"--exclude=discord"
 
   # Generic cache patterns
   "--exclude=*cache"
