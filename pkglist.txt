@@ -16,6 +16,7 @@ fd
 feh
 fzf
 git
+git-filter-repo
 github-cli
 gobuster
 grub

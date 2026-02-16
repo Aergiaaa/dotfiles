@@ -16,7 +16,6 @@ DOTFILES=(
   ".config"
   ".oh-my-zsh"
   ".tmux"
-  ".ssh"
 )
 
 for item in "${DOTFILES[@]}"; do
