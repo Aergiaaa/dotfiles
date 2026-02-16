@@ -27,6 +27,7 @@ for item in "${DOTFILES[@]}"; do
       rsync -a --delete \
         --exclude='BraveSoftware' \
         --exclude='discord' \
+				--exclude='gh'\
         --exclude='google-chrome' \
         --exclude='chromium' \
         --exclude='VSCodium/Cache' \
