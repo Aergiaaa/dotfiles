@@ -2,7 +2,7 @@
 
 set -e
 
-cd ~/dotfiles
+cd $HOME/dotfiles
 
 echo "syncing saved dotfiles"
 DOTFILES=(
@@ -30,6 +30,13 @@ for item in "${DOTFILES[@]}"; do
   else
     echo "$item not found in $HOME dir"
   fi
+done
+
+echo "removing .git from packages"
+find . -name ".git" -type d -not -path "./.git" | while read -r gitdir; do
+  echo "removing $gitdir"
+  rm -rf "$gitdir"
+  echo "removed $gitdir"
 done
 
 echo "backing up packages"
