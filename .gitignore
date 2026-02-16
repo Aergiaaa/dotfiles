@@ -1,0 +1,13 @@
+# Add to ~/.dotfiles/.gitignore
+BraveSoftware/
+google-chrome/
+chromium/
+**/Cache/
+**/CachedData/
+**/Code Cache/
+**/GPUCache/
+**/logs/
+*.log
+node_modules/
+.steam/
+.pki/
