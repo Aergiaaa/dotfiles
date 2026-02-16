@@ -1,0 +1,67 @@
+
+configFile="~/.zshrc"
+configDir="~/.zscript"
+termDir="~/.config/kitty/kitty.conf"
+nvimDir="~/.config/nvim"
+tmuxConf="~/.tmux.conf"
+wmConf="~/.config/dwm"
+
+alias n="nvim"
+
+alias ff="fastfetch --structure 'Title:Separator:OS:Kernel:Host:WM:Cursor:Shell:Terminal:Break:CPU:GPU:Memory:Disk:Break:Colors'"
+
+alias pgr="sudo -iu postgres"
+
+alias nvim="bob run nightly"
+
+alias scan="nmcli d wifi rescan"
+
+alias t="tmux attach"
+
+alias mpv-yt='mpv --ytdl-raw-options=cookies-from-browser=chromium:~/.local/share/qutebrowser/webengine,js-runtimes=node,remote-components=ejs:github'
+
+alias rw="wal -i $WALLPAPER; c"
+
+alias whereami="pwd"
+alias c="clear"
+alias hc="tput reset;restart_wall;clear"
+alias a="alias"
+alias bashing="source $configFile"
+
+alias edit="nvim $configDir"
+alias edid="sudo -E bob run nightly $wmConf"
+alias edik="nvim $termDir"
+alias edin="nvim $nvimDir"
+alias edix="nvim $tmuxConf"
+
+alias sound="pulsemixer"
+
+alias m="rmpc"
+
+alias todo="nvim ~/to-do.txt"
+
+alias cat=bat
+
+alias fw="sudo ufw"
+
+alias dos="slowhttptest"
+
+alias vpn="cd ~/vpn;sudo openvpn * &;cd -"
+
+alias -s txt='bat'
+alias -s pdf='zathura'
+alias -s json='jless'
+alias -s go='$EDITOR'
+alias -s js='$EDITOR'
+alias -s ts='$EDITOR'
+alias -s jpg='feh'
+alias -s png='feh'
+alias -s jpeg='feh'
+alias -s mp4='mpv'
+
+
+alias -g JQ='| jq'
+alias -g GR='| grep'
+alias -g BT='| bat'
+
+unalias gsh

@@ -1,0 +1,90 @@
+
+sd(){
+  cd $(fd -H -t d | fzf)
+}
+
+wf() {
+	wd $(wd list | awk 'NR > 1 {print $1}' | fzf)
+}
+
+pac(){
+	arg=$1
+	input=$2
+
+	if [[ $arg == "s" ]]; then
+		pacman -Ss $input
+		return 0;
+	elif [[ $arg == "i" ]]; then
+		sudo pacman -S $input
+		return 0;
+	elif [[ $arg == "r" ]]; then
+		sudo pacman -R $input
+		return 0;
+	elif [[ $arg == "u" ]]; then
+		sudo pacman -Syu
+		return 0;
+	elif [[ $arg == "l" ]]; then
+		pacman -Qe
+		return 0;
+	fi
+}
+
+y(){
+  arg=$1
+  input=$2
+
+  if [[ $arg == "s" ]]; then
+    yay -Ss $input
+    return 0;
+  elif [[ $arg == "i" ]]; then
+    yay -S $input
+    return 0;
+  elif [[ $arg == "r" ]]; then
+    yay -R $input
+    return 0;
+  elif [[ $arg == "u" ]]; then
+    yay -Sua
+    return 0;
+  fi  
+}
+
+hotspot(){
+  switch=$1
+  if [[ $switch == "up" ]]; then
+    nmcli c up AERGIA_
+    return 0;
+  elif [[ $switch == "down" ]]; then
+    nmcli c down AERGIA_
+    return 0;
+  fi
+}
+
+pack(){
+	opt=$1
+	input=$2
+	case $opt in
+		find)
+			yay -Ss $input
+			;;
+		up)
+			yay -Syu
+			;;
+		in) 
+			yay $input
+			;;
+		ins) 
+			yay -Sy $input
+			;;
+	esac
+
+}
+
+compile(){
+  file=$1
+
+  nasm -f elf64 $file.s -o $file.o
+}
+
+dl() {
+  yt-dlp -f ba -x --audio-format flac --audio-quality 0 --add-metadata --embed-thumbnail -o "%(title)s.%(ext)s" $1
+}

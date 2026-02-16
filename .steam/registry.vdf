@@ -1,0 +1,43 @@
+"Registry"
+{
+	"HKLM"
+	{
+		"Software"
+		{
+			"Valve"
+			{
+				"Steam"
+				{
+					"SteamPID"		"0"
+					"TempAppCmdLine"		"'~/.steam/root/ubuntu12_32/steam' '-foreground'"
+					"ReLaunchCmdLine"		""
+					"ClientLauncherType"		"0"
+				}
+			}
+		}
+	}
+	"HKCU"
+	{
+		"Software"
+		{
+			"Valve"
+			{
+				"Steam"
+				{
+					"StartupModeTmpIsValid"		"0"
+					"steamglobal"
+					{
+						"language"		"english"
+					}
+					"language"		"english"
+					"CompletedOOBEStage1"		"1"
+					"SourceModInstallPath"		"/home/aergia/.local/share/Steam/steamapps\\sourcemods"
+					"AutoLoginUser"		"muzakren45"
+					"Rate"		"30000"
+					"AlreadyRetriedOfflineMode"		"0"
+					"DPIScaling"		"0"
+				}
+			}
+		}
+	}
+}

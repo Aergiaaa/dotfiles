@@ -1,0 +1,16 @@
+
+bindkey '^E^E' edit-command-line
+bindkey '^Z' undo
+bindkey '^H' backward-kill-word
+
+bindkey -r '^S'
+
+cp-cmd(){
+	echo -n $BUFFER | xclip -selection clipboard
+	zle -M "copied"
+}
+zle -N cp-cmd
+bindkey '^Sc' cp-cmd
+
+bindkey -s '^Sd' 'git commit -m ""\C-b'
+
