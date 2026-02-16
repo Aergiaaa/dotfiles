@@ -3,12 +3,8 @@
 # exit on error
 set -e
 
-# ?variable part
-
 local yay_install_link=https://aur.archlinux.org/yay.git
 local dot_dir="$HOME/dotfiles"
-
-# ?running part
 
 echo "Starting setup..."
 
@@ -21,7 +17,6 @@ sudo pacman -Syu --noconfirm
 # installing packages
 echo -e "\n[2/4] installing packages"
 sudo pacman -S --needed --noconfirm - <$dot_dir/pkglist.txt
-sudo pacman -S --needed --noconfirm stow
 
 # install yay if not there
 if ! command -v yay &>/dev/null; then
@@ -36,7 +31,7 @@ if ! command -v yay &>/dev/null; then
 
   cd $dot_dir
 else
-  echo -e "\nyay already installed, skipping"
+  echo -e "\n[3/4] yay already installed, skipping"
 fi
 
 # installing aur packages
