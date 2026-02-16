@@ -12,6 +12,9 @@ EXCLUDE_PATTERN=(
   "--exclude=google-chrome"
   "--exclude=chromium"
 
+	# Discord
+	"--exclude=discord"
+
   # Code editors
   "--exclude=VSCodium/Cache"
   "--exclude=VSCodium/CachedData"
