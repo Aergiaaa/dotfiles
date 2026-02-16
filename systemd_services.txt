@@ -1,0 +1,6 @@
+mpd.service
+dunst.service
+pipewire.service
+pipewire-pulse.service
+wireplumber.service
+

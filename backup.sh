@@ -6,42 +6,12 @@ cd $HOME/dotfiles
 
 echo "syncing saved dotfiles"
 
-# EXCLUDE_PATTERN=(
-#   # Browser data
-#   "--exclude=BraveSoftware"
-#   "--exclude=google-chrome"
-#   "--exclude=chromium"
-#
-#   # Code editors
-#   "--exclude=VSCodium/Cache"
-#   "--exclude=VSCodium/CachedData"
-#   "--exclude=VSCodium/Code Cache"
-#   "--exclude=VSCodium/GPUCache"
-#   "--exclude=VSCodium/logs"
-#
-#   # Apps
-#   "--exclude=discord"
-#
-#   # Generic cache patterns
-#   "--exclude=*cache"
-#   "--exclude=*Cache"
-#   "--exclude=CachedData"
-#   "--exclude=GPUCache"
-#   "--exclude=Code Cache"
-#
-#   # Logs
-#   "--exclude=*.log"
-#   "--exclude=logs"
-#
-#   # Build artifacts
-#   "--exclude=node_modules"
-# )
-
 DOTFILES=(
   ".zshrc"
   ".p10k.zsh"
   ".tmux.conf"
   ".xinitrc"
+	".Xresources"
   ".zscript"
   ".config"
   ".oh-my-zsh"
