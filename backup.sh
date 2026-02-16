@@ -6,36 +6,36 @@ cd $HOME/dotfiles
 
 echo "syncing saved dotfiles"
 
-EXCLUDE_PATTERN=(
-  # Browser data
-  "--exclude=BraveSoftware"
-  "--exclude=google-chrome"
-  "--exclude=chromium"
-
-  # Code editors
-  "--exclude=VSCodium/Cache"
-  "--exclude=VSCodium/CachedData"
-  "--exclude=VSCodium/Code Cache"
-  "--exclude=VSCodium/GPUCache"
-  "--exclude=VSCodium/logs"
-
-  # Apps
-	"--exclude=discord"
-
-  # Generic cache patterns
-  "--exclude=*cache"
-  "--exclude=*Cache"
-  "--exclude=CachedData"
-  "--exclude=GPUCache"
-  "--exclude=Code Cache"
-
-  # Logs
-  "--exclude=*.log"
-  "--exclude=logs"
-
-  # Build artifacts
-  "--exclude=node_modules"
-)
+# EXCLUDE_PATTERN=(
+#   # Browser data
+#   "--exclude=BraveSoftware"
+#   "--exclude=google-chrome"
+#   "--exclude=chromium"
+#
+#   # Code editors
+#   "--exclude=VSCodium/Cache"
+#   "--exclude=VSCodium/CachedData"
+#   "--exclude=VSCodium/Code Cache"
+#   "--exclude=VSCodium/GPUCache"
+#   "--exclude=VSCodium/logs"
+#
+#   # Apps
+#   "--exclude=discord"
+#
+#   # Generic cache patterns
+#   "--exclude=*cache"
+#   "--exclude=*Cache"
+#   "--exclude=CachedData"
+#   "--exclude=GPUCache"
+#   "--exclude=Code Cache"
+#
+#   # Logs
+#   "--exclude=*.log"
+#   "--exclude=logs"
+#
+#   # Build artifacts
+#   "--exclude=node_modules"
+# )
 
 DOTFILES=(
   ".zshrc"
@@ -55,7 +55,26 @@ for item in "${DOTFILES[@]}"; do
       echo "$item already in sync"
     else
       echo "-> copying $item"
-      rsync -a --delete "$HOME/$item" .
+      rsync -a --delete \
+        --exclude='BraveSoftware' \
+        --exclude='discord' \
+        --exclude='google-chrome' \
+        --exclude='chromium' \
+        --exclude='VSCodium/Cache' \
+        --exclude='VSCodium/CachedData' \
+        --exclude='VSCodium/Code Cache' \
+        --exclude='VSCodium/GPUCache' \
+        --exclude='VSCodium/logs' \
+        --exclude='**/Cache' \
+        --exclude='**/cache' \
+        --exclude='**/CachedData' \
+        --exclude='**/GPUCache' \
+        --exclude='**/Code Cache' \
+        --exclude='**/Local Storage' \
+        --exclude='**/logs' \
+        --exclude='**/*.log' \
+        --exclude='**/node_modules' \
+        "$HOME/$item" .
     fi
   else
     echo "$item not found in $HOME dir"
