@@ -4,6 +4,7 @@ ffuf
 github-copilot-cli
 gnu-netcat
 input-remapper
+neovim-remote
 protonup-qt
 python-pywalfox
 seclists

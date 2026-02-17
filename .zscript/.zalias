@@ -6,13 +6,15 @@ nvimDir="~/.config/nvim"
 tmuxConf="~/.tmux.conf"
 wmConf="~/.config/dwm"
 
-alias n="nvim"
+alias nvim="NVIM_LISTEN_ADDRESS=/tmp/nvimsocket vim"
+
+alias n="nvr --remote"
 
 alias ff="fastfetch --structure 'Title:Separator:OS:Kernel:Host:WM:Cursor:Shell:Terminal:Break:CPU:GPU:Memory:Disk:Break:Colors'"
 
 alias pgr="sudo -iu postgres"
 
-alias nvim="bob run nightly"
+alias vim="bob run nightly"
 
 alias scan="nmcli d wifi rescan"
 
