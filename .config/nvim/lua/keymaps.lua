@@ -2,6 +2,7 @@ local map = vim.keymap.set
 
 -- user defined keymap
 map('v', '<leader>k=', [[:s/\v<(\w*)/\1 = "\1"<CR>]], { desc = 'Convert to key-value pairs' })
+map('v', '<leader>k:', [[:s/\v<(\w*)/\1: "\1"<CR>]], { desc = 'Convert to key-value pairs' })
 map("i", "<C-l>", "{<CR>}<Esc>O", { noremap = true, silent = true })
 map("i", "{", "{}<Left>", { noremap = true, silent = true })
 map("i", "(", "()<Left>", { noremap = true, silent = true })

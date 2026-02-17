@@ -38,10 +38,10 @@ BUS="${DBUS_SESSION_BUS_ADDRESS:-unix:path=/run/user/$(id -u)/bus}"
 
 JOB_SCRIPT="export DISPLAY='$DISPLAY'
 	export DBUS_SESSION_BUS_ADDRESS='$BUS'
-	notify-send --urgency=critical --icon=alarm 'Alarm' '$MESSAGE'"
+	notify-send --urgency=critical 'Alert' '$MESSAGE'"
 
 JOB_OUTPUT=$(echo "$JOB_SCRIPT" | at "$FORMATTED $WHEN" 2>&1)
 
 JOB_ID=$(echo "$JOB_OUTPUT" | grep -oP 'job \K[0-9]+')
 
-echo "Alarm set for $FORMATTED $WHEN"
+echo "Alert set for $FORMATTED $WHEN"
