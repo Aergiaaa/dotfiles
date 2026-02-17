@@ -29,8 +29,12 @@ for item in "${DOTFILES[@]}"; do
         --exclude='BraveSoftware' \
         --exclude='discord' \
         --exclude='gh' \
+        --exclude='st' \
+        --exclude='dconf' \
+        --exclude='telemetry' \
         --exclude='google-chrome' \
         --exclude='chromium' \
+        --exclude='torbrowser' \
         --exclude='VSCodium/Cache' \
         --exclude='VSCodium/CachedData' \
         --exclude='VSCodium/Code Cache' \
