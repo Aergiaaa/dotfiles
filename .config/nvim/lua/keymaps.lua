@@ -40,5 +40,10 @@ map({ 'n', 'v', 'x' }, '<leader>d', '"+d<CR>')
 map('i', '<C-p>', '<Esc>', { noremap = true })
 map('n', '<C-p>', 'i', { noremap = true })
 
+
+-- terminal mode
+map('n', '<leader><CR>', ':term<CR>', { desc = "open terminal" })
+map('t', '<C-p>', '<C-\\><C-n>', { desc = "switch terminal mode" })
+
 -- select full block
-map('n', '<leader>b', 'v{jo}k')
+map('n', '<C-b>', 'v{jo}k')

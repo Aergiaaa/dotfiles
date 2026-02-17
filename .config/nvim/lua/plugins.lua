@@ -55,6 +55,9 @@ require 'mini.extra'.setup()
 map('n', '<leader>ff', ':Pick files<CR>')
 map('n', '<leader>fs', ':Pick grep_live<CR>')
 map('n', '<leader>h', ':Pick help<CR>')
+map('n', '<leader>\\', ':Pick buffers<CR>')
+map('n', '<leader><BS>', ':bd<CR>')
+
 
 -- treesitter
 local nt = require 'nvim-treesitter'
