@@ -11,11 +11,12 @@ DOTFILES=(
   ".p10k.zsh"
   ".tmux.conf"
   ".xinitrc"
-	".Xresources"
+  ".Xresources"
   ".zscript"
   ".config"
   ".oh-my-zsh"
   ".tmux"
+  "script"
 )
 
 for item in "${DOTFILES[@]}"; do
@@ -27,7 +28,7 @@ for item in "${DOTFILES[@]}"; do
       rsync -a --delete \
         --exclude='BraveSoftware' \
         --exclude='discord' \
-				--exclude='gh'\
+        --exclude='gh' \
         --exclude='google-chrome' \
         --exclude='chromium' \
         --exclude='VSCodium/Cache' \

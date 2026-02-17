@@ -38,3 +38,6 @@ map({ 'n', 'v', 'x' }, '<leader>y', '"+y<CR>')
 map({ 'n', 'v', 'x' }, '<leader>d', '"+d<CR>')
 map('i', '<C-p>', '<Esc>', { noremap = true })
 map('n', '<C-p>', 'i', { noremap = true })
+
+-- select full block
+map('n', '<leader>b', 'v{jo}k')

@@ -1,2 +1,5 @@
 etc/
+script/
+*.sh
+*.txt
 .config/systemd/user/

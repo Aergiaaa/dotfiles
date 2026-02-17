@@ -1,0 +1,10 @@
+[Unit]
+Description=Restart YouTube notifier after suspend for %i
+After=suspend.target hybrid-sleep.target sleep.target
+
+[Service]
+Type=oneshot
+ExecStart=systemctl --user restart yt-notify@%i
+
+[Install]
+WantedBy=suspend.target hybrid-sleep.target sleep.target
