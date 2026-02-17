@@ -30,6 +30,7 @@ for item in "${DOTFILES[@]}"; do
         --exclude='discord' \
         --exclude='gh' \
         --exclude='st' \
+        --exclude='zoom' \
         --exclude='dconf' \
         --exclude='telemetry' \
         --exclude='google-chrome' \
