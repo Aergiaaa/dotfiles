@@ -8,7 +8,7 @@ wmConf="~/.config/dwm"
 
 alias nvim="NVIM_LISTEN_ADDRESS=/tmp/nvimsocket vim"
 
-alias n="nvr --remote"
+alias n="nvr --remote ."
 
 alias ff="fastfetch --structure 'Title:Separator:OS:Kernel:Host:WM:Cursor:Shell:Terminal:Break:CPU:GPU:Memory:Disk:Break:Colors'"
 
@@ -30,17 +30,17 @@ alias hc="tput reset;restart_wall;clear"
 alias a="alias"
 alias bashing="source $configFile"
 
-alias edit="nvim $configDir"
-alias edid="sudo -E bob run nightly $wmConf"
-alias edik="nvim $termDir"
-alias edin="nvim $nvimDir"
-alias edix="nvim $tmuxConf"
+alias edit="n $configDir"
+alias edid="sudo -E nvr --remote $wmConf"
+alias edik="n $termDir"
+alias edin="n $nvimDir"
+alias edix="n $tmuxConf"
 
 alias sound="pulsemixer"
 
 alias m="rmpc"
 
-alias todo="nvim ~/to-do.txt"
+alias todo="n ~/to-do.txt"
 
 alias cat=bat
 

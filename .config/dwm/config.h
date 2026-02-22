@@ -73,11 +73,10 @@ static const Layout layouts[] = {
 static char dmenumon[2] =
     "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = {
-    "dmenu_run", "-m",      dmenumon, "-fn",    dmenufont, "-nb",     col_gray1,
-    "-nf",       col_fonts, "-sb",    col_main, "-sf",     col_fonth, NULL};
+    "dmenu_run", "-m",  dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf",
+    col_fonts,   "-sb", col_main, "-sf", col_fonth, "-l",  "3",       NULL};
 
-static const char *termcmd[] = {"kitty", "-e", "tmux", "new-session",
-                                "-A",    "0",  NULL};
+static const char *termcmd[] = {"kitty", "-e", "zsh", "-c", "tmux", NULL};
 static const char *browserlaunch[] = {"qutebrowser", NULL};
 
 static const char *clip[] = {"/bin/sh", "-c", "~/script/screenshot.sh", NULL};
@@ -86,8 +85,8 @@ static const char *volup[] = {"volume.sh", "up", "2", NULL};
 static const char *voldown[] = {"volume.sh", "down", "2", NULL};
 static const char *volmute[] = {"volume.sh", "mute", NULL};
 
-static const char *brightup[] = {"brightness.sh", "up","5", NULL};
-static const char *brightdown[] = {"brightness.sh", "down","5", NULL};
+static const char *brightup[] = {"brightness.sh", "up", "5", NULL};
+static const char *brightdown[] = {"brightness.sh", "down", "5", NULL};
 
 static const char *ctrlpgup[] = {"xdotool", "key", "ctrl+Page_Up", NULL};
 static const char *ctrlpgdn[] = {"xdotool", "key", "ctrl+Page_Down", NULL};
@@ -106,7 +105,7 @@ static const Key keys[] = {
     {0, XF86XK_MonBrightnessDown, spawn, {.v = brightdown}},
     {MODKEY, XF86XK_AudioRaiseVolume, spawn, {.v = brightup}},
     {MODKEY, XF86XK_AudioLowerVolume, spawn, {.v = brightdown}},
-    {MODKEY, XK_space, spawn, {.v = dmenucmd}},
+    {MODKEY, XK_p, spawn, {.v = dmenucmd}},
     {MODKEY, XK_Return, spawn, {.v = termcmd}},
     {MODKEY, XK_o, spawn, {.v = browserlaunch}},
     {MODKEY, XK_n, spawn, {.v = ctrlpgdn}},
@@ -135,7 +134,8 @@ static const Key keys[] = {
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle,
  * ClkClientWin, or ClkRootWin */
 static const Button buttons[] = {
-    /* click                event mask      button          function argument */
+    /* click                event mask      button          function
+       argument */
     {ClkLtSymbol, 0, Button1, setlayout, {0}},
     {ClkLtSymbol, 0, Button3, setlayout, {.v = &layouts[2]}},
     {ClkWinTitle, 0, Button2, zoom, {0}},

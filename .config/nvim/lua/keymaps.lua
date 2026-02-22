@@ -29,7 +29,7 @@ end
 -- utils keymap
 map('n', '<leader>ss', ':source<CR>')
 map('n', '<leader>w', ':w<CR>', { silent = true })
-map('n', '<leader>q', ':q<CR>', { silent = true })
+-- map('n', '<leader>q', ':q<CR>', { silent = true })
 map('n', '<leader><Tab>', ':e #<CR>')
 map({ 'n', 'i' }, '<C-w>', ':bd<CR>')
 map({ 'n', 'v', 'x' }, '<leader>[', function() vim.cmd.norm('[%') end)
@@ -44,6 +44,7 @@ map('n', '<C-p>', 'i', { noremap = true })
 -- terminal mode
 map('n', '<leader><CR>', ':term<CR>', { desc = "open terminal" })
 map('t', '<C-p>', '<C-\\><C-n>', { desc = "switch terminal mode" })
+map('n', '<leader>q', ':bd<CR>', { desc = "clear buffer" })
 
 -- select full block
 map('n', '<C-b>', 'v{jo}k')

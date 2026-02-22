@@ -8,6 +8,7 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 	{ src = "https://github.com/mason-org/mason.nvim" },
 	{ src = "https://github.com/nvim-lua/plenary.nvim" },
+	{ src = "https://github.com/goolord/alpha-nvim" },
 	{ src = "https://github.com/L3MON4D3/LuaSnip" },
 	{
 		src = "https://github.com/ThePrimeagen/harpoon",
@@ -56,7 +57,6 @@ map('n', '<leader>ff', ':Pick files<CR>')
 map('n', '<leader>fs', ':Pick grep_live<CR>')
 map('n', '<leader>h', ':Pick help<CR>')
 map('n', '<leader>\\', ':Pick buffers<CR>')
-map('n', '<leader><BS>', ':bd<CR>')
 
 
 -- treesitter
@@ -78,3 +78,22 @@ require 'pywal'.setup()
 
 -- mason
 require 'mason'.setup()
+
+-- alpha
+local alpha = require 'alpha'
+local dash = require 'alpha.themes.dashboard'
+
+dash.section.header.val = {
+	"	░██ ░██           ░██           ░██    ░██                                                    ",
+	"░██               ░██           ░██    ░██                                                    ",
+	"░██ ░██ ░████████ ░████████  ░████████ ░████████   ░███████  ░██    ░██  ░███████   ░███████  ",
+	"░██ ░██░██    ░██ ░██    ░██    ░██    ░██    ░██ ░██    ░██ ░██    ░██ ░██        ░██    ░██ ",
+	"░██ ░██░██    ░██ ░██    ░██    ░██    ░██    ░██ ░██    ░██ ░██    ░██  ░███████  ░█████████ ",
+	"░██ ░██░██   ░███ ░██    ░██    ░██    ░██    ░██ ░██    ░██ ░██   ░███        ░██ ░██        ",
+	"░██ ░██ ░█████░██ ░██    ░██     ░████ ░██    ░██  ░███████   ░█████░██  ░███████   ░███████  ",
+	"              ░██                                                                             ",
+	"        ░███████                                                                              ",
+
+}
+
+alpha.setup(dash.config)

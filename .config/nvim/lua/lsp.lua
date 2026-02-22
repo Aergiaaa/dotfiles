@@ -36,7 +36,7 @@ vim.api.nvim_create_autocmd("FileType", {
 -- GOLANG
 vim.lsp.config('gopls', {
 	cmd = { 'gopls' },
-	filetypes = { 'go', 'gomod', 'gowork' },
+	filetypes = { 'go', 'gomod' },
 	root_markers = { 'go.', 'go.mod', '.git' }
 })
 
