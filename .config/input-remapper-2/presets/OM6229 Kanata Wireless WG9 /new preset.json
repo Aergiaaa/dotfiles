@@ -3,6 +3,18 @@
         "input_combination": [
             {
                 "type": 1,
+                "code": 276,
+                "origin_hash": "664de156c4ecde7913c66194b5a2e201"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_PAGEUP",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
                 "code": 275,
                 "origin_hash": "664de156c4ecde7913c66194b5a2e201"
             }
@@ -15,12 +27,12 @@
         "input_combination": [
             {
                 "type": 1,
-                "code": 276,
+                "code": 274,
                 "origin_hash": "664de156c4ecde7913c66194b5a2e201"
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "KEY_PAGEUP",
+        "output_symbol": "Control_L",
         "mapping_type": "key_macro"
     }
 ]

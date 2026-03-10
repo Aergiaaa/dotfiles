@@ -32,8 +32,6 @@ map('n', '<leader>w', ':w<CR>', { silent = true })
 -- map('n', '<leader>q', ':q<CR>', { silent = true })
 map('n', '<leader><Tab>', ':e #<CR>')
 map({ 'n', 'i' }, '<C-w>', ':bd<CR>')
-map({ 'n', 'v', 'x' }, '<leader>[', function() vim.cmd.norm('[%') end)
-map({ 'n', 'v', 'x' }, '<leader>]', function() vim.cmd.norm(']%') end)
 map("i", "<C-H>", "<C-W>", { silent = true, desc = "Delete previous word in insert mode" })
 map({ 'n', 'v', 'x' }, '<leader>y', '"+y<CR>')
 map({ 'n', 'v', 'x' }, '<leader>d', '"+d<CR>')
@@ -48,3 +46,45 @@ map('n', '<leader>q', ':bd<CR>', { desc = "clear buffer" })
 
 -- select full block
 map('n', '<C-b>', 'v{jo}k')
+
+-- wrapper
+vim.keymap.set('v', '<leader>]', function()
+	-- exit visual first so '< '> marks are set correctly
+	vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<Esc>', true, false, true), 'x', false)
+
+	local char = vim.fn.getcharstr()
+
+	local pairs = {
+		['('] = { '(', ')' },
+		[')'] = { '(', ')' },
+		['['] = { '[', ']' },
+		[']'] = { '[', ']' },
+		['{'] = { '{', '}' },
+		['}'] = { '{', '}' },
+		['"'] = { '"', '"' },
+		["'"] = { "'", "'" },
+		['`'] = { '`', '`' },
+		['<'] = { '<', '>' },
+	}
+
+	local wrap = pairs[char] or { char, char }
+
+	local pos1 = vim.fn.getpos("'<")
+	local pos2 = vim.fn.getpos("'>")
+	local ls, cs = pos1[2], pos1[3]
+	local le, ce = pos2[2], pos2[3]
+
+	local lines = vim.api.nvim_buf_get_lines(0, ls - 1, le, false)
+	local last_line = lines[#lines]
+	ce = math.min(ce, #last_line)
+
+	if ls == le then
+		local line = lines[1]
+		lines[1] = line:sub(1, cs - 1) .. wrap[1] .. line:sub(cs, ce) .. wrap[2] .. line:sub(ce + 1)
+	else
+		lines[1] = lines[1]:sub(1, cs - 1) .. wrap[1] .. lines[1]:sub(cs)
+		lines[#lines] = last_line:sub(1, ce) .. wrap[2] .. last_line:sub(ce + 1)
+	end
+
+	vim.api.nvim_buf_set_lines(0, ls - 1, le, false, lines)
+end)

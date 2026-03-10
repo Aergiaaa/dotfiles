@@ -30,6 +30,24 @@ map({ 'i', 's' }, '<C-b>', function()
 end, { silent = true }
 )
 
+ls.add_snippets("c", {
+	s("main", fmt(
+		[[
+		{} main() {{
+			{};
+			{};
+		}}
+		]], {
+			i(2, "int"), i(1), i(3, "return 0")
+		})),
+	s("imp", fmt(
+		[[
+		#include <<{}>>
+		]], {
+			i(1)
+		}
+	))
+})
 
 ls.add_snippets("lua", {
 	-- use "snip"

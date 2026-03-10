@@ -64,6 +64,7 @@ steam
 stow
 sudo
 sysstat
+tinyxxd
 tldr
 tmux
 torbrowser-launcher

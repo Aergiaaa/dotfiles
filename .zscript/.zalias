@@ -38,9 +38,11 @@ alias edix="n $tmuxConf"
 
 alias sound="pulsemixer"
 
+alias con="nmtui"
+
 alias m="rmpc"
 
-alias todo="n ~/to-do.txt"
+alias todo="n ~/jadwal.todo"
 
 alias cat=bat
 
