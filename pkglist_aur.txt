@@ -6,6 +6,7 @@ gnu-netcat
 input-remapper
 neovim-remote
 protonup-qt
+python-pycookiecheat
 python-pywalfox
 seclists
 subfinder

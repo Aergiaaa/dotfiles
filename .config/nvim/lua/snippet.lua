@@ -42,7 +42,7 @@ ls.add_snippets("c", {
 		})),
 	s("imp", fmt(
 		[[
-		#include <<{}>>
+		#include <{}>
 		]], {
 			i(1)
 		}

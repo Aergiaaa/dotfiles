@@ -6,7 +6,11 @@ volume=$($vol | awk '{print int($2*100)}')
 muted=$($vol | grep -o MUTED)
 
 if [ "$muted" = "MUTED" ]; then
-	echo "vol: m"
+	echo "v:m"
 else
-	echo "vol: $volume%"
+	if [ $volume -gt 100 ]; then
+		echo "v:$volume%!"
+	else
+	echo "v:$volume%"
+	fi
 fi

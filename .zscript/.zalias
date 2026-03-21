@@ -6,6 +6,8 @@ nvimDir="~/.config/nvim"
 tmuxConf="~/.tmux.conf"
 wmConf="~/.config/dwm"
 
+alias sudo='sudo '
+
 alias nvim="NVIM_LISTEN_ADDRESS=/tmp/nvimsocket vim"
 
 alias n="nvr --remote ."
@@ -43,6 +45,7 @@ alias con="nmtui"
 alias m="rmpc"
 
 alias todo="n ~/jadwal.todo"
+alias coret="n ~/coret.txt"
 
 alias cat=bat
 

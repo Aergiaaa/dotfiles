@@ -9,6 +9,9 @@ vim.o.swapfile = false
 vim.o.signcolumn = "yes"
 vim.o.winborder = "rounded"
 
+vim.o.completeopt = 'menuone,noselect,noinsert'
+vim.o.complete = ''
+
 vim.o.autoread = true
 
 vim.o.termguicolors = true

@@ -10,6 +10,8 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-lua/plenary.nvim" },
 	{ src = "https://github.com/goolord/alpha-nvim" },
 	{ src = "https://github.com/L3MON4D3/LuaSnip" },
+	{ src = "https://github.com/mbbill/undotree" },
+	{ src = "https://github.com/ibhagwan/fzf-lua" },
 	{
 		src = "https://github.com/ThePrimeagen/harpoon",
 		branch = "harpoon2",
@@ -53,10 +55,16 @@ local pick = require 'mini.pick'
 pick.setup()
 require 'mini.extra'.setup()
 
-map('n', '<leader>ff', ':Pick files<CR>')
 map('n', '<leader>fs', ':Pick grep_live<CR>')
-map('n', '<leader>h', ':Pick help<CR>')
 map('n', '<leader>\\', ':Pick buffers<CR>')
+
+-- fzf-lua
+local fzf = require 'fzf-lua'
+fzf.setup()
+map('n', '<leader>ff', ':FzfLua files<CR>')
+map('n', '<leader>fo', ':FzfLua oldfiles<CR>')
+map('n', '<leader>fh', ':FzfLua helptags<CR>')
+map('n', '<leader>fc', ':FzfLua commands<CR>')
 
 
 -- treesitter
@@ -64,7 +72,7 @@ local nt = require 'nvim-treesitter'
 nt.setup {
 	install_dir = vim.fn.stdpath('data') .. '/site'
 }
-nt.update { 'go', 'rust', 'lua', 'c', 'bash' }
+nt.update { 'go', 'rust', 'lua', 'c', 'bash', 'asm' }
 
 -- lualine
 require 'lualine'.setup {
@@ -72,6 +80,9 @@ require 'lualine'.setup {
 		theme = 'pywal-nvim',
 	}
 }
+
+-- undotree
+map('n', '<leader>;', vim.cmd.UndotreeToggle)
 
 -- pywal
 require 'pywal'.setup()
@@ -82,6 +93,22 @@ require 'mason'.setup()
 -- alpha
 local alpha = require 'alpha'
 local dash = require 'alpha.themes.dashboard'
+
+--   Frecency/MRU                            SPC f r
+--
+--   Jump to bookmarks                       SPC f m
+--
+--   Open last session                       SPC s l
+
+dash.section.buttons.val = {
+	dash.button('f', '󰈞  > Find file', ':FzfLua files<CR>'),
+	dash.button('h', '  > Recent files', ':FzfLua oldfiles<CR>'),
+	dash.button('w', '󰈬  > Find word', ':Pick grep_live<CR>'),
+	dash.button("s", "  > Settings", ":Oil ~/.config/nvim/init.lua<CR>"),
+	dash.button('q', '󰅚  > Quit', ':qa<CR>'),
+
+
+}
 
 dash.section.header.val = {
 	"	░██ ░██           ░██           ░██    ░██                                                    ",

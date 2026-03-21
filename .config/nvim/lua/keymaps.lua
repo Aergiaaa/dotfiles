@@ -4,14 +4,19 @@ local map = vim.keymap.set
 map('v', '<leader>k=', [[:s/\v<(\w*)/\1 = "\1"<CR>]], { desc = 'Convert to key-value pairs' })
 map('v', '<leader>k:', [[:s/\v<(\w*)/\1: "\1"<CR>]], { desc = 'Convert to key-value pairs' })
 map("i", "<C-l>", "{<CR>}<Esc>O", { noremap = true, silent = true })
-map("i", "{", "{}<Left>", { noremap = true, silent = true })
-map("i", "(", "()<Left>", { noremap = true, silent = true })
-map("i", "[", "[]<Left>", { noremap = true, silent = true })
+map('i', '{', '{}<Left>', { noremap = true, silent = true })
+map('i', '(', '()<Left>', { noremap = true, silent = true })
+map('i', '[', '[]<Left>', { noremap = true, silent = true })
 map("i", '"', '""<Left>', { noremap = true, silent = true })
 map("i", "'", "''<Left>", { noremap = true, silent = true })
 
+-- window navigation
+map('n', '<leader>h', ':wincmd h<CR>')
+map('n', '<leader>j', ':wincmd j<CR>')
+map('n', '<leader>k', ':wincmd k<CR>')
+map('n', '<leader>ll', ':wincmd l<CR>')
+
 -- lsp keymap
-map('i', '<C-i>', vim.lsp.buf.hover)
 map({ 'n', 'i' }, '<C-s>', function() vim.lsp.buf.signature_help() end)
 map('n', '<leader>ln', function() vim.lsp.buf.rename() end)
 map('n', '<leader>lr', function() vim.lsp.buf.references() end)

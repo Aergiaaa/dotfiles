@@ -27,5 +27,5 @@ config.set('hints.selectors', {
 config.bind(';s', 'hint scrollable')   
 config.bind(',m', 'hint links spawn mpv --ytdl-raw-options=cookies-from-browser=chromium:~/.local/share/qutebrowser/webengine,js-runtimes=node,remote-components=ejs:github {hint-url}')
 config.bind(',M', 'hint links spawn mpv {hint-url}')
-# config.bind(',y', 'hint links spawn yt-dlp {hint-url} -P ~/downloads/music --embed-metadata --embed-thumbnail --js-runtimes node --cookies-from-browser chromium:~/.local/share/qutebrowser/webengine --remote-components ejs:github')
+config.bind(',3', 'hint links spawn mpv {hint-url} --no-video')
 config.bind(',y', 'hint links spawn yt-dlp {hint-url} -P ~/downloads/music --embed-metadata --embed-thumbnail --convert-thumbnails jpg -x --audio-format opus --audio-quality 0 --js-runtimes node ')

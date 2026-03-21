@@ -70,6 +70,5 @@ source ~/.zscript/.zkey
 source ~/.zscript/.zfunc
 
 #exec init func
-restart_wall
-clear
+c
 ff
