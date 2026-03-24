@@ -8,6 +8,7 @@ bob
 brightnessctl
 btop
 bun
+cmatrix
 coreutils
 discord
 dnsmasq

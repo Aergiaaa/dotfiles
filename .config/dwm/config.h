@@ -5,10 +5,12 @@ static const unsigned int borderpx = 0; /* border pixel of windows */
 static const unsigned int snap = 64;    /* snap pixel */
 static const int showbar = 1;           /* 0 means no bar */
 static const int topbar = 1;            /* 0 means bottom bar */
-static const char *fonts[] = {"FiraCode Nerd Font:style=Medium:size=20",
-                              "Symbols Nerd Font:style=Regular:size=20",
-                              "Noto Sans CJK JP:style=Regular:size=20",
-                              "Twitter Color Emoji:size=20"};
+static const char *fonts[] = {
+    "FiraCode Nerd Font:style=Medium:size=20",
+    "Twitter Color Emoji:size=20",
+    "Symbols Nerd Font:style=Regular:size=20",
+    "Noto Sans CJK JP:style=Regular:size=20",
+};
 static const char dmenufont[] = "FiraCode Nerd Font:style=Medium:size=20";
 static const char col_gray1[] = "#222222";
 static const char col_gray2[] = "#444444";
@@ -126,6 +128,10 @@ static const Key keys[] = {
     {MODKEY, XK_0, view, {.ui = ~0}},
     {MODKEY, XK_Prior, viewneighbor, {.ui = +1}},
     {MODKEY, XK_Next, viewneighbor, {.ui = -1}},
+    {MODKEY, XK_Up, focusdir, {.i = 0}},
+    {MODKEY, XK_Down, focusdir, {.i = 1}},
+    {MODKEY, XK_Left, focusdir, {.i = 2}},
+    {MODKEY, XK_Right, focusdir, {.i = 3}},
     TAGKEYS(XK_1, 0) TAGKEYS(XK_2, 1) TAGKEYS(XK_3, 2) TAGKEYS(XK_4, 3)
         TAGKEYS(XK_5, 4){MODKEY | ShiftMask, XK_BackSpace, quit, {0}},
     {MODKEY | ShiftMask | ControlMask, XK_Delete, spawn, {.v = shutdown}}};

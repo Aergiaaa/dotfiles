@@ -51,8 +51,7 @@ oil.setup({
 map('n', '<leader>e', ':Oil --float<CR>', { silent = true })
 
 -- mini
-local pick = require 'mini.pick'
-pick.setup()
+require 'mini.pick'.setup()
 require 'mini.extra'.setup()
 
 map('n', '<leader>fs', ':Pick grep_live<CR>')
@@ -60,19 +59,47 @@ map('n', '<leader>\\', ':Pick buffers<CR>')
 
 -- fzf-lua
 local fzf = require 'fzf-lua'
-fzf.setup()
-map('n', '<leader>ff', ':FzfLua files<CR>')
-map('n', '<leader>fo', ':FzfLua oldfiles<CR>')
-map('n', '<leader>fh', ':FzfLua helptags<CR>')
-map('n', '<leader>fc', ':FzfLua commands<CR>')
+fzf.setup {
+	"telescope"
+}
 
+local function buf_dir()
+	return vim.fn.expand('%:p:h')
+end
+
+map('n', '<leader>ff', function() fzf.files({ cwd = buf_dir() }) end)
+map('n', '<leader>fo', function() fzf.oldfiles({ cwd = buf_dir() }) end)
+map('n', '<leader>fm', function()
+	fzf.manpages({
+		actions = {
+			['default'] = function(s)
+				vim.cmd('tab Man ' .. s[1]:match('%((.-)%)') .. ' ' .. s[1]:match('(.-)%('))
+			end
+		}
+	})
+end)
+map('n', '<leader>fh', ':FzfLua helptags<CR>')
+map('n', '<leader>fd', ':FzfLua commands<CR>')
+map('n', '<leader>gg', function() fzf.grep({ cwd = buf_dir() }) end)
+map('n', '<leader>fp', function()
+	fzf.fzf_exec('fd --type d . ' .. vim.fn.expand('~'), {
+		prompt = 'Dirs> ',
+		actions = {
+			['default'] = function(selected)
+				if selected and selected[1] then
+					oil.open_float(selected[1])
+				end
+			end
+		}
+	})
+end)
 
 -- treesitter
 local nt = require 'nvim-treesitter'
 nt.setup {
 	install_dir = vim.fn.stdpath('data') .. '/site'
 }
-nt.update { 'go', 'rust', 'lua', 'c', 'bash', 'asm' }
+nt.update { 'go', 'rust', 'lua', 'c', 'bash', 'asm', 'html' }
 
 -- lualine
 require 'lualine'.setup {
@@ -94,20 +121,15 @@ require 'mason'.setup()
 local alpha = require 'alpha'
 local dash = require 'alpha.themes.dashboard'
 
---   Frecency/MRU                            SPC f r
---
 --   Jump to bookmarks                       SPC f m
---
 --   Open last session                       SPC s l
 
 dash.section.buttons.val = {
 	dash.button('f', '󰈞  > Find file', ':FzfLua files<CR>'),
 	dash.button('h', '  > Recent files', ':FzfLua oldfiles<CR>'),
 	dash.button('w', '󰈬  > Find word', ':Pick grep_live<CR>'),
-	dash.button("s", "  > Settings", ":Oil ~/.config/nvim/init.lua<CR>"),
-	dash.button('q', '󰅚  > Quit', ':qa<CR>'),
-
-
+	dash.button("s", "  > Settings", ':Oil --float ~/.config/nvim<CR>'),
+	dash.button('q', '󰅚  > Quit', ':q')
 }
 
 dash.section.header.val = {

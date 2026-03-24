@@ -196,6 +196,7 @@ static void focus(Client *c);
 static void focusin(XEvent *e);
 static void focusmon(const Arg *arg);
 static void focusstack(const Arg *arg);
+static void focusdir(const Arg *arg);
 static Atom getatomprop(Client *c, Atom prop);
 static int getrootptr(int *x, int *y);
 static long getstate(Window w);
@@ -850,6 +851,71 @@ void focusstack(const Arg *arg) {
   }
   if (c) {
     focus(c);
+    restack(selmon);
+  }
+}
+
+void focusdir(const Arg *arg) {
+  Client *c = NULL, *best = NULL;
+
+  int bestdist = INT_MAX, dist;
+  int cx, cy, wx, wy; // center
+
+  if (!selmon->sel)
+    return;
+
+  cx = selmon->sel->x + selmon->sel->w / 2;
+  cy = selmon->sel->y + selmon->sel->h / 2;
+
+  for (c = selmon->clients; c; c = c->next) {
+    if (!ISVISIBLE(c) || c == selmon->sel)
+      continue;
+
+    wx = c->x + c->w / 2;
+    wy = c->y + c->h / 2;
+
+    switch (arg->i) {
+    case 0: /* up */
+      if (wy < cy) {
+        dist = (cy - wy) * (cy - wy) + (cx - wx) * (cx - wx);
+        if (dist < bestdist) {
+          bestdist = dist;
+          best = c;
+        }
+      }
+      break;
+    case 1: /* down */
+      if (wy > cy) {
+        dist = (wy - cy) * (wy - cy) + (cx - wx) * (cx - wx);
+        if (dist < bestdist) {
+          bestdist = dist;
+          best = c;
+        }
+      }
+      break;
+    case 2: /* left */
+      if (wx < cx) {
+        dist = (cx - wx) * (cx - wx) + (cy - wy) * (cy - wy);
+        if (dist < bestdist) {
+          bestdist = dist;
+          best = c;
+        }
+      }
+      break;
+    case 3: /* right */
+      if (wx > cx) {
+        dist = (wx - cx) * (wx - cx) + (cy - wy) * (cy - wy);
+        if (dist < bestdist) {
+          bestdist = dist;
+          best = c;
+        }
+      }
+      break;
+    }
+  }
+
+  if (best) {
+    focus(best);
     restack(selmon);
   }
 }

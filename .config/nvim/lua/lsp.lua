@@ -49,9 +49,24 @@ vim.lsp.config('lua_ls', {
 	cmd = { 'lua-language-server' },
 	settings = {
 		Lua = {
+			runtime = {
+				version = 'LuaJIT'
+			},
 			workspace = {
-				library = vim.api.nvim_get_runtime_file("", true),
-				checkThirdParty = false
+				library = {
+					vim.env.VIMRUNTIME,
+					'${3d}/luv/library' -- for vim.uv / luv types
+				},
+				checkThirdParty = false,
+				maxPreload = 1000,
+				preloadFileSize = 500
+			},
+			diagnostics = {
+				globals = { 'vim' },
+				disable = { 'missing-fields' }
+			},
+			telemetry = {
+				enable = false,
 			}
 		}
 	}
@@ -90,5 +105,30 @@ vim.lsp.config('emmet_ls', {
 	filetypes = { 'html', 'css', 'javascriptreact', 'typescriptreact' },
 })
 
--- EXEC
-vim.lsp.enable({ 'lua_ls', "gopls", "rust_analyzer", "clangd", "bashls", "asm-lsp", "emmet_ls" })
+-- LAZY LOAD — enable each LSP only when its filetype is opened
+local ft_servers = {
+	lua             = 'lua_ls',
+	go              = 'gopls',
+	gomod           = 'gopls',
+	rust            = 'rust_analyzer',
+	c               = 'clangd',
+	cpp             = 'clangd',
+	sh              = 'bashls',
+	bash            = 'bashls',
+	asm             = 'asm-lsp',
+	s               = 'asm-lsp',
+	html            = 'emmet_ls',
+	css             = 'emmet_ls',
+	javascriptreact = 'emmet_ls',
+	typescriptreact = 'emmet_ls',
+}
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = vim.tbl_keys(ft_servers),
+	callback = function(ev)
+		local server = ft_servers[ev.match]
+		if server then
+			vim.lsp.enable(server)
+		end
+	end,
+})

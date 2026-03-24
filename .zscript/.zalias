@@ -43,6 +43,7 @@ alias sound="pulsemixer"
 alias con="nmtui"
 
 alias m="rmpc"
+alias b="btop"
 
 alias todo="n ~/jadwal.todo"
 alias coret="n ~/coret.txt"
