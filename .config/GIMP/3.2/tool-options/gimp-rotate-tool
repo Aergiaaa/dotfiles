@@ -1,0 +1,8 @@
+# GIMP gimp-rotate-tool options
+
+(interpolation linear)
+(frompivot-scale yes)
+(frompivot-shear yes)
+(frompivot-perspective yes)
+
+# end of gimp-rotate-tool options

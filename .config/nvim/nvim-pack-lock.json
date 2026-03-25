@@ -32,6 +32,10 @@
       "rev": "aa242acc17683515d8f749552aebe061bced9132",
       "src": "git@github.com:echasnovski/mini.pick"
     },
+    "nvim-highlight-colors": {
+      "rev": "e2cb22089cc2358b2b995c09578224f142de6039",
+      "src": "https://github.com/brenoprata10/nvim-highlight-colors"
+    },
     "nvim-lspconfig": {
       "rev": "92ee7d42320edfbb81f3cad851314ab197fa324a",
       "src": "git@github.com:neovim/nvim-lspconfig"

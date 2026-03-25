@@ -1,4 +1,3 @@
-
 configFile="~/.zshrc"
 configDir="~/.zscript"
 termDir="~/.config/kitty/kitty.conf"

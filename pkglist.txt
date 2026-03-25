@@ -18,6 +18,7 @@ fastfetch
 fd
 feh
 fzf
+gimp
 git
 git-filter-repo
 github-cli
@@ -54,6 +55,7 @@ picom
 pipewire-alsa
 pipewire-pulse
 pulsemixer
+putty
 python-mutagen
 python-pywal
 python-setuptools

@@ -5,6 +5,7 @@ github-copilot-cli
 gnu-netcat
 input-remapper
 neovim-remote
+opentabletdriver
 protonup-qt
 python-pycookiecheat
 python-pywalfox

@@ -1,0 +1,10 @@
+# settings
+
+(adjustment 0.875)
+(adjustment-2 8)
+(adjustment-3 1)
+(adjustment-4 2)
+(toggle yes)
+(toggle-2 yes)
+
+# end of settings
