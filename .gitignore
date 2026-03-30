@@ -10,6 +10,6 @@ chromium/
 node_modules/
 .steam/
 .pki/
-.config/gimp/
+.config/GIMP/
 .config/unity3d/
 
