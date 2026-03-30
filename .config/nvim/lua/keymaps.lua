@@ -10,6 +10,11 @@ map('i', '[', '[]<Left>', { noremap = true, silent = true })
 map("i", '"', '""<Left>', { noremap = true, silent = true })
 map("i", "'", "''<Left>", { noremap = true, silent = true })
 
+-- split window
+map('n', '<leader>vv', ':vsplit<CR>', { silent = true })
+map('n', '<leader>vh', ':split<CR>', { silent = true })
+map('n', '<leader>vr', ':only<CR>', { silent = true })
+
 -- window navigation
 map('n', '<leader><Left>', ':wincmd h<CR>', { silent = true })
 map('n', '<leader><Down>', ':wincmd j<CR>', { silent = true })
@@ -60,6 +65,19 @@ map('n', '<C-p>', 'i', { noremap = true })
 
 -- terminal mode
 map('n', '<leader><CR>', ':term<CR>', { desc = "open terminal" })
+map('n', 't', function()
+	vim.cmd('lcd %:h')
+	local cmd = vim.fn.input('Run Inside: ')
+	if cmd ~= '' then
+		vim.cmd('botright vert term zsh -i -c "c;' .. cmd .. '"')
+	end
+end)
+map('n', '<leader>t', function()
+	local cmd = vim.fn.input('Run: ')
+	if cmd ~= '' then
+		vim.cmd('term zsh -i -c "c;' .. cmd .. '"')
+	end
+end)
 map('t', '<C-p>', '<C-\\><C-n>', { desc = "switch terminal mode" })
 map('n', '<leader>q', ':bd<CR>', { desc = "clear buffer" })
 map('n', '<leader>Q', ':bd!<CR>', { desc = "clear buffer" })

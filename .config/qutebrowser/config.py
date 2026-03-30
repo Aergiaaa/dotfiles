@@ -6,9 +6,9 @@ c.fonts.default_family = 'JetBrains Mono'
 
 c.fonts.default_size = '18px'
 
-c.url.default_page = "about:blank"   
+c.url.default_page = "https://search.brave.com/"   
 
-c.url.searchengines = {'DEFAULT': 'https://search.brave.com/search?q={}'}
+c.url.searchengines = {'DEFAULT':'https://search.brave.com/search?q={}'}
 
 config.bind('<Ctrl+=>', 'zoom-in')
 config.bind('<Ctrl+->', 'zoom-out')

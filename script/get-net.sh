@@ -16,23 +16,50 @@ else
   state="off"
 fi
 
-netstats=
-case $state in
-wf)
-  netstats=$(ifstat | awk '/wlp1s0/{print $7, $9}')
-  ;;
-eth)
-  netstats=$(ifstat | awk '/enp3s0f3u2u4/{print $7, $9}')
-  ;;
-esac
+  netstats=
+  case $state in
+  wf)
+    netstats=$(ifstat | awk '/wlp1s0/{print $6, $8}')
+    ;;
+  eth)
+    netstats=$(ifstat | awk '/enp3s0f3u2u4/{print $6, $8}')
+    ;;
+  esac
 
-if [ -n "$netstats" ]; then
-  downstat=$(echo $netstats | awk '{print $1}')
-  upstat=$(echo $netstats | awk '{print $2}')
+  if [ -n "$netstats" ]; then
+    downstat=$(echo $netstats | awk '{print $1}')
+    upstat=$(echo $netstats | awk '{print $2}')
 
-  output+="dw=$downstat""b:""up=$upstat""b:"
-fi
+    if [ $downstat -gt 1024 ]; then
+      dkilo=$((downstat / 1024))
 
-output+="n=$state"
+      if [ $dkilo -gt 1024 ]; then
+        dmega=$((dkilo / 1024))
+        output+="dw=${dmega}Mb:"
+      else
+        output+="dw=${dkilo}Kb:"
+      fi
+    else
+      output+="dw=${downstat}b:"
+    fi
 
-echo "$output"
+    if [ $upstat -gt 1024 ]; then
+      ukilo=$((upstat / 1024))
+
+      if [ $ukilo -gt 1024 ]; then
+        umega=$((ukilo / 1024))
+        output+="up=${umega}Mb"
+      else
+        output+="up=${ukilo}Kb"
+      fi
+    else
+      output+="up=${upstat}b"
+    fi
+
+    output+="[$state]"
+  else
+    output+="[$state]"
+  fi
+
+  echo "$output"
+  exit 0

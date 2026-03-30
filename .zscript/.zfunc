@@ -79,12 +79,6 @@ pack(){
 
 }
 
-compile(){
-  file=$1
-
-  nasm -f elf64 $file.s -o $file.o
-}
-
 dl() {
   yt-dlp -f ba -x --audio-format flac --audio-quality 0 --add-metadata --embed-thumbnail -o "%(title)s.%(ext)s" $1
 }

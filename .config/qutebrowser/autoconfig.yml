@@ -54,6 +54,9 @@ settings:
     global: always
   tabs.show:
     global: never
+  url.searchengines:
+    global:
+      DEFAULT: https://search.brave.com/search?q={}
   url.start_pages:
     global: about:blank
   zoom.default:

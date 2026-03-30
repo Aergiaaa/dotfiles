@@ -19,10 +19,10 @@
 
 // Define blocks for the status feed as X(icon, cmd, interval, signal).
 #define BLOCKS(X)                                                             \
-    X("", "get-net.sh", 1, 0) \
+    X("", "get-net.sh", 1, 3) \
     X("", "get-volume.sh", 0, 1) \
     X("", "get-brightness.sh", 0, 2) \
-    X("", "system.sh", 5, 2)                                                  \
-    X("", "date.sh", 15, 0)
+    X("", "system.sh", 5, 4)                                                  \
+    X("", "date.sh", 15, 5)
 
 #endif  // CONFIG_H

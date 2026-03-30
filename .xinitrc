@@ -14,4 +14,4 @@ fi
 
 (sleep 2 && input-remapper-control --command autoload) &
 
-exec dwm
+dwm

@@ -1,5 +1,5 @@
 <unity_prefs version_major="1" version_minor="1">
-	<pref name="OptionsData" type="string">ewogICAgIiRpZCI6IDAsCiAgICAiJHR5cGUiOiAiMHxPcHRpb25zU2F2ZURhdGEsIEFzc2VtYmx5LUNTaGFycCIsCiAgICAiZGlhbG9ndWVTcGVlZCI6IDMsCiAgICAibW91c2VTZW5zaXRpdml0eSI6IDEsCiAgICAiZ2FtbWEiOiAwLAogICAgIm5vaXNlRW5hYmxlZCI6IHRydWUsCiAgICAiZmxpY2tlcmluZ0Rpc2FibGVkIjogZmFsc2UsCiAgICAic2NyZWVuc2hha2VEaXNhYmxlZCI6IGZhbHNlLAogICAgIm1hc3RlclZvbHVtZSI6IDUsCiAgICAibXVzaWNWb2x1bWUiOiA1LAogICAgInNvdW5kVm9sdW1lIjogNSwKICAgICJydW5JbkJhY2tncm91bmQiOiBmYWxzZSwKICAgICJ1bmxvY2tDdXJzb3JGcm9tV2luZG93IjogZmFsc2UsCiAgICAidmlkZW9TdWJ0aXRsZXMiOiB0cnVlLAogICAgImxhbmd1YWdlIjogMCwKICAgICJmaXJzdFBsYXlTZXRTeXN0ZW1MYW5ndWFnZSI6IHRydWUKfQ==</pref>
+	<pref name="OptionsData" type="string">ewogICAgIiRpZCI6IDAsCiAgICAiJHR5cGUiOiAiMHxPcHRpb25zU2F2ZURhdGEsIEFzc2VtYmx5LUNTaGFycCIsCiAgICAiZGlhbG9ndWVTcGVlZCI6IDUsCiAgICAibW91c2VTZW5zaXRpdml0eSI6IDEsCiAgICAiZ2FtbWEiOiAwLAogICAgIm5vaXNlRW5hYmxlZCI6IHRydWUsCiAgICAiZmxpY2tlcmluZ0Rpc2FibGVkIjogZmFsc2UsCiAgICAic2NyZWVuc2hha2VEaXNhYmxlZCI6IGZhbHNlLAogICAgIm1hc3RlclZvbHVtZSI6IDMsCiAgICAibXVzaWNWb2x1bWUiOiAxLAogICAgInNvdW5kVm9sdW1lIjogMywKICAgICJydW5JbkJhY2tncm91bmQiOiB0cnVlLAogICAgInVubG9ja0N1cnNvckZyb21XaW5kb3ciOiBmYWxzZSwKICAgICJ2aWRlb1N1YnRpdGxlcyI6IHRydWUsCiAgICAibGFuZ3VhZ2UiOiAwLAogICAgImZpcnN0UGxheVNldFN5c3RlbUxhbmd1YWdlIjogdHJ1ZQp9</pref>
 	<pref name="Screenmanager Fullscreen mode" type="int">1</pref>
 	<pref name="Screenmanager Fullscreen mode Default" type="int">1</pref>
 	<pref name="Screenmanager Resolution Height" type="int">720</pref>
@@ -12,6 +12,6 @@
 	<pref name="Screenmanager Window Position Y" type="int">0</pref>
 	<pref name="UnityGraphicsQuality" type="int">0</pref>
 	<pref name="UnitySelectMonitor" type="int">0</pref>
-	<pref name="unity.player_session_count" type="string">Mg==</pref>
-	<pref name="unity.player_sessionid" type="string">NTQ2NDM4MDMzNzAwNzg1NTgwNA==</pref>
+	<pref name="unity.player_session_count" type="string">NQ==</pref>
+	<pref name="unity.player_sessionid" type="string">MzI2Njc4ODA2NzYxNzMyMTA4Mg==</pref>
 </unity_prefs>
