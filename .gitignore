@@ -1,4 +1,3 @@
-# Add to ~/.dotfiles/.gitignore
 BraveSoftware/
 google-chrome/
 chromium/
@@ -11,3 +10,6 @@ chromium/
 node_modules/
 .steam/
 .pki/
+gimp/
+unity3d/
+
