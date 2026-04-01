@@ -36,12 +36,6 @@ end)
 -- lsp keymap
 map({ 'n', 'i' }, '<C-s>', function() vim.lsp.buf.signature_help() end)
 map('n', '<leader>ln', function() vim.lsp.buf.rename() end)
-map('n', '<leader>lr', function() vim.lsp.buf.references() end)
-map('n', '<leader>lf', function() vim.lsp.buf.definition() end)
-map('n', '<leader>lc', function() vim.lsp.buf.declaration() end)
-map('n', '<leader>lt', function() vim.lsp.buf.type_definition() end)
-map('n', '<leader>li', function() vim.lsp.buf.implementation() end)
-map('n', '<leader>la', function() vim.lsp.buf.code_action() end)
 map('n', '<leader>fa', function()
 	if vim.bo.filetype == 'sh' or vim.bo.filetype == 'bash' then
 		vim.cmd('normal! ggVGgq')

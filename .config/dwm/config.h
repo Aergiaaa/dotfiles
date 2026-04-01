@@ -83,7 +83,9 @@ static const char *dmenucmd[] = {
 static const char *termcmd[] = {"kitty", "-e", "zsh", "-c", "tmux", NULL};
 static const char *browserlaunch[] = {"qutebrowser", NULL};
 
-static const char *clip[] = {"/bin/sh", "-c", "~/script/screenshot.sh", NULL};
+
+static const char *clip[] = {"screenshot.sh", NULL};
+static const char *record[] = {"screenrecord.sh", NULL};
 
 static const char *volup[] = {"volume.sh", "up", "2", NULL};
 static const char *voldown[] = {"volume.sh", "down", "2", NULL};
@@ -102,6 +104,7 @@ static const Key keys[] = {
        function        	argument */
 
     {MODKEY | ShiftMask, XK_s, spawn, {.v = clip}},
+    {MODKEY | ShiftMask, XK_r, spawn, {.v = record}},
     {0, XF86XK_AudioLowerVolume, spawn, {.v = voldown}},
     {0, XF86XK_AudioRaiseVolume, spawn, {.v = volup}},
     {0, XF86XK_AudioMute, spawn, {.v = volmute}},

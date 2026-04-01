@@ -12,13 +12,14 @@
 #define CLICKABLE_BLOCKS 1
 
 // Control whether a leading delimiter should be prepended to the status.
-#define LEADING_DELIMITER 0
+#define LEADING_DELIMITER 1
 
 // Control whether a trailing delimiter should be appended to the status.
 #define TRAILING_DELIMITER 0
 
 // Define blocks for the status feed as X(icon, cmd, interval, signal).
 #define BLOCKS(X)                                                             \
+    X("", "get-record.sh", 0, 6) \
     X("", "get-net.sh", 1, 3) \
     X("", "get-volume.sh", 0, 1) \
     X("", "get-brightness.sh", 0, 2) \

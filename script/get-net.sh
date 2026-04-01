@@ -6,60 +6,75 @@ wifi_state=$(echo "$stats" | grep -A1 "GENERAL.TYPE:wifi$" | grep "GENERAL.STATE
 eth_state=$(echo "$stats" | grep -A1 "GENERAL.TYPE:ethernet" | grep "GENERAL.STATE" | grep -o '^[^:]*:[0-9]*' | grep -o '[0-9]*$')
 
 state=
-output=" "
+output=
 
-if [ "$wifi_state" = "100" ]; then
-  state="wf"
-elif [ "$eth_state" = "100" ]; then
+if [ "$eth_state" = "100" ]; then
   state="eth"
+elif [ "$wifi_state" = "100" ]; then
+  state="wf"
 else
   state="off"
 fi
 
-  netstats=
-  case $state in
-  wf)
-    netstats=$(ifstat | awk '/wlp1s0/{print $6, $8}')
-    ;;
-  eth)
-    netstats=$(ifstat | awk '/enp3s0f3u2u4/{print $6, $8}')
-    ;;
+to_bytes() {
+  local val="$1"
+  local num suffix
+  num=$(echo "$val" | grep -o '^[0-9.]*')
+  suffix=$(echo "$val" | grep -o '[A-Za-z]*$')
+  case "$suffix" in
+  K | k) echo $(awk "BEGIN{printf \"%d\", $num * 1024}") ;;
+  M | m) echo $(awk "BEGIN{printf \"%d\", $num * 1048576}") ;;
+  G | g) echo $(awk "BEGIN{printf \"%d\", $num * 1073741824}") ;;
+  *) echo $(awk "BEGIN{printf \"%d\", $num}") ;;
   esac
+}
 
-  if [ -n "$netstats" ]; then
-    downstat=$(echo $netstats | awk '{print $1}')
-    upstat=$(echo $netstats | awk '{print $2}')
+netstats=
+case $state in
+wf)
+  netstats=$(ifstat | awk '/wlp1s0/{print $6, $8}')
+  ;;
+eth)
+  netstats=$(ifstat | awk '/enp3s0f3u2u4/{print $6, $8}')
+  ;;
+esac
 
-    if [ $downstat -gt 1024 ]; then
-      dkilo=$((downstat / 1024))
+if [ -n "$netstats" ]; then
+  downstat=$(to_bytes "$(echo $netstats | awk '{print $1}')")
+  upstat=$(to_bytes "$(echo $netstats | awk '{print $2}')")
 
-      if [ $dkilo -gt 1024 ]; then
-        dmega=$((dkilo / 1024))
-        output+="dw=${dmega}Mb:"
-      else
-        output+="dw=${dkilo}Kb:"
-      fi
+  output+="d="
+  if [ $downstat -gt 1024 ]; then
+    dkilo=$((downstat / 1024))
+
+    if [ $dkilo -gt 1024 ]; then
+      dmega=$((dkilo / 1024))
+      output+="${dmega}Mb:"
     else
-      output+="dw=${downstat}b:"
+      output+="${dkilo}Kb:"
     fi
-
-    if [ $upstat -gt 1024 ]; then
-      ukilo=$((upstat / 1024))
-
-      if [ $ukilo -gt 1024 ]; then
-        umega=$((ukilo / 1024))
-        output+="up=${umega}Mb"
-      else
-        output+="up=${ukilo}Kb"
-      fi
-    else
-      output+="up=${upstat}b"
-    fi
-
-    output+="[$state]"
   else
-    output+="[$state]"
+    output+="${downstat}b:"
   fi
 
-  echo "$output"
-  exit 0
+  output+="u="
+  if [ $upstat -gt 1024 ]; then
+    ukilo=$((upstat / 1024))
+
+    if [ $ukilo -gt 1024 ]; then
+      umega=$((ukilo / 1024))
+      output+="${umega}Mb"
+    else
+      output+="${ukilo}Kb"
+    fi
+  else
+    output+="${upstat}b"
+  fi
+
+  output+="[$state]"
+else
+  output+="[$state]"
+fi
+
+echo "$output"
+exit 0

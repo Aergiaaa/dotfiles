@@ -55,7 +55,6 @@ map('n', '<leader>e', ':Oil --float<CR>', { silent = true })
 require 'mini.pick'.setup()
 require 'mini.extra'.setup()
 
-map('n', '<leader>fs', ':Pick grep_live<CR>')
 map('n', '<leader>\\', ':Pick buffers<CR>')
 
 -- fzf-lua
@@ -80,7 +79,13 @@ map('n', '<leader>fm', function()
 	})
 end)
 map('n', '<leader>fh', ':FzfLua helptags<CR>')
-map('n', '<leader>fd', ':FzfLua commands<CR>')
+map('n', '<leader>fs', ':FzfLua commands<CR>')
+map('n', '<leader>ld', ':FzfLua lsp_document_symbols<CR>')
+map('n', '<leader>lc', ':FzfLua lsp_code_actions<CR>')
+map('n', '<leader>li', ':FzfLua lsp_implementations<CR>')
+map('n', '<leader>lt', ':FzfLua lsp_typedefs<CR>')
+map('n', '<leader>lf', ':FzfLua lsp_definitions<CR>')
+map('n', '<leader>lr', ':FzfLua lsp_references<CR>')
 map('n', '<leader>gg', function() fzf.grep({ cwd = buf_dir() }) end)
 map('n', '<leader>fp', function()
 	fzf.fzf_exec('fd --type d . ' .. vim.fn.expand('~'), {

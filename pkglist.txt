@@ -18,6 +18,7 @@ fastfetch
 fd
 feh
 fzf
+gdb
 gimp
 git
 git-filter-repo
