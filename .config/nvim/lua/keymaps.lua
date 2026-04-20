@@ -15,6 +15,10 @@ map('n', '<leader>vv', ':vsplit<CR>', { silent = true })
 map('n', '<leader>vh', ':split<CR>', { silent = true })
 map('n', '<leader>vr', ':only<CR>', { silent = true })
 
+-- scroll navigation
+map({ 'i', 'n' }, '<C-k>', '<C-e>', { silent = true, noremap = true })
+map({ 'i', 'n' }, '<C-j>', '<C-y>', { silent = true, noremap = true })
+
 -- window navigation
 map('n', '<leader><Left>', ':wincmd h<CR>', { silent = true })
 map('n', '<leader><Down>', ':wincmd j<CR>', { silent = true })
@@ -37,7 +41,9 @@ end)
 map({ 'n', 'i' }, '<C-s>', function() vim.lsp.buf.signature_help() end)
 map('n', '<leader>ln', function() vim.lsp.buf.rename() end)
 map('n', '<leader>fa', function()
-	if vim.bo.filetype == 'sh' or vim.bo.filetype == 'bash' then
+	local ft = vim.bo.filetype
+	local fmtprg_fts = { sh = true, bash = true, html = true, css = true, javascript = true, typescript = true }
+	if fmtprg_fts[ft] then
 		vim.cmd('normal! ggVGgq')
 	else
 		vim.lsp.buf.format()

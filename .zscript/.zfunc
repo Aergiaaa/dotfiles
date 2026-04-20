@@ -51,10 +51,10 @@ y(){
 hotspot(){
   switch=$1
   if [[ $switch == "up" ]]; then
-    nmcli c up AERGIA_
+    nmcli c up AERGIA
     return 0;
   elif [[ $switch == "down" ]]; then
-    nmcli c down AERGIA_
+    nmcli c down AERGIA
     return 0;
   fi
 }

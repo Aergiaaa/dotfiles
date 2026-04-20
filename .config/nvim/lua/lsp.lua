@@ -1,4 +1,4 @@
-local enabled = true   -- completion on by default
+local enabled = true -- completion on by default
 vim.api.nvim_create_autocmd('LspAttach', {
 	callback = function(ev)
 		local client = vim.lsp.get_client_by_id(ev.data.client_id)
@@ -130,16 +130,54 @@ vim.lsp.config('gopls', {
 	root_markers = { 'go.sum', 'go.mod', '.git' }
 })
 
--- ASM
-vim.lsp.config('asm-lsp', {
-	cmd = { 'asm-lsp' },
-	filetypes = { 'asm' }
+-- RUST
+vim.lsp.config('rust_analyzer', {
+	cmd = { 'rust-analyzer' },
+	filetypes = { 'rust' },
+	root_markers = { 'Cargo.toml', 'Cargo.lock', '.git' },
+	settings = {
+		['rust-analyzer'] = {
+			cargo = {
+				allFeatures = true
+			},
+			procMacro = {
+				enable = true
+			},
+		}
+	}
 })
 
--- EMMET
+-- HTML/CSS
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 vim.lsp.config('emmet_ls', {
-	cmd = { 'emmet-ls', '--stdio' },
-	filetypes = { 'html', 'css', 'javascriptreact', 'typescriptreact' },
+	cmd = { 'emmet-language-server', '--stdio' },
+	capabilities = capabilities,
+	filetypes = { 'html', 'css' },
+	root_markers = { '.git', 'package.json' }
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "html", "css" },
+	callback = function()
+		vim.bo.formatprg = "prettier --stdin-filepath %"
+	end
+})
+
+
+-- JS/TS
+vim.lsp.config('ts_ls', {
+	cmd = { 'typescript-language-server', '--stdio' },
+	filetypes = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'vue' },
+	root_markers = { 'tsconfig.json', 'jsconfig.json', 'package.json', '.git' },
+	init_options = {
+		hostInfo = 'neovim',
+	},
+	settings = {
+		typescript = {
+			inlayHints = { includeInlayParameterNameHints = 'all' }
+		}
+	}
 })
 
 -- LAZY LOAD — enable each LSP only when its filetype is opened
@@ -152,12 +190,12 @@ local ft_servers = {
 	cpp             = 'clangd',
 	sh              = 'bashls',
 	bash            = 'bashls',
-	asm             = 'asm-lsp',
-	s               = 'asm-lsp',
 	html            = 'emmet_ls',
 	css             = 'emmet_ls',
-	javascriptreact = 'emmet_ls',
-	typescriptreact = 'emmet_ls',
+	javascript      = 'ts_ls',
+	javascriptreact = 'ts_ls',
+	typescriptreact = 'ts_ls',
+	vue             = 'ts_ls',
 }
 
 vim.api.nvim_create_autocmd("FileType", {

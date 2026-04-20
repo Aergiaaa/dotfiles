@@ -1,5 +1,7 @@
 vim.o.shell = "/bin/zsh"
 
+vim.o.showtabline = 0
+
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.wrap = false

@@ -34,9 +34,6 @@ map('n', '<leader>3', function() harp:list():select(3) end)
 map('n', '<leader>4', function() harp:list():select(4) end)
 map('n', '<leader>5', function() harp:list():select(5) end)
 
-map('n', '<leader>,', function() harp:list():prev() end)
-map('n', '<leader>.', function() harp:list():next() end)
-
 -- oil
 local oil = require 'oil'
 oil.setup({
@@ -67,6 +64,27 @@ local function buf_dir()
 	return vim.fn.expand('%:p:h')
 end
 
+map('n', '<leader>fs', function()
+	local snips = {}
+	for ft, ft_snips in pairs(require('luasnip').get_snippets()) do
+		for _, snip in ipairs(ft_snips) do
+			table.insert(snips, ft .. '\t' .. snip.name .. '\t' .. (snip.dscr[1] or ''))
+		end
+	end
+
+	fzf.fzf_exec(snips, {
+		prompt = 'Snippets> ',
+		actions = {
+			['default'] = function(selected)
+				local trigger = selected[1]:match('\t(.+)\t')
+				if trigger then
+					vim.api.nvim_put({ trigger }, 'c', true, true)
+				end
+			end
+		}
+	})
+end, { desc = 'List snippets' })
+
 map('n', '<leader>ff', function() fzf.files({ cwd = buf_dir() }) end)
 map('n', '<leader>fo', function() fzf.oldfiles({ cwd = buf_dir() }) end)
 map('n', '<leader>fm', function()
@@ -79,7 +97,7 @@ map('n', '<leader>fm', function()
 	})
 end)
 map('n', '<leader>fh', ':FzfLua helptags<CR>')
-map('n', '<leader>fs', ':FzfLua commands<CR>')
+map('n', '<leader>fc', ':FzfLua commands<CR>')
 map('n', '<leader>ld', ':FzfLua lsp_document_symbols<CR>')
 map('n', '<leader>lc', ':FzfLua lsp_code_actions<CR>')
 map('n', '<leader>li', ':FzfLua lsp_implementations<CR>')
@@ -100,12 +118,20 @@ map('n', '<leader>fp', function()
 	})
 end)
 
+
+
 -- treesitter
 local nt = require 'nvim-treesitter'
 nt.setup {
 	install_dir = vim.fn.stdpath('data') .. '/site'
 }
 nt.update { 'go', 'rust', 'lua', 'c', 'bash', 'asm', 'html' }
+vim.api.nvim_create_autocmd('FileType', {
+	callback = function()
+		pcall(vim.treesitter.start)
+	end,
+})
+
 
 -- lualine
 require 'lualine'.setup {

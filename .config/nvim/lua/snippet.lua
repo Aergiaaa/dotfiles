@@ -5,6 +5,7 @@ local i = ls.insert_node
 local c = ls.choice_node
 local f = ls.function_node
 local fmt = require "luasnip.extras.fmt".fmt
+local rep = require "luasnip.extras".rep
 
 local map = vim.keymap.set
 
@@ -31,6 +32,15 @@ end, { silent = true }
 )
 
 ls.add_snippets("c", {
+	s("str", fmt(
+		[[
+		typedef struct {} {{
+			{}
+		}}{};
+		]], {
+			i(1), i(2), rep(1)
+		}
+	)),
 	s("main", fmt(
 		[[
 		{} main() {{
@@ -291,4 +301,17 @@ ls.add_snippets("go", {
 			i(1),
 			t(")")
 		})
+})
+
+ls.add_snippets("html", {
+	s("<", fmt(
+		[[<{}>{}</{}>]], {
+			i(1, "div"), i(2), rep(1)
+		}
+	)),
+	s("</", fmt(
+		[[<{} />]], {
+			i(1, "div")
+		}
+	)),
 })
