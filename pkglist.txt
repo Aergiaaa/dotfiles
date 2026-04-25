@@ -23,6 +23,7 @@ gimp
 git
 git-filter-repo
 github-cli
+go-task
 gobuster
 gperf
 grub

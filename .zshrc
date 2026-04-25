@@ -43,6 +43,9 @@ export MUSIC="$HOME/music"
 # setup govm
 export PATH="$HOME/.govm/shim:$PATH"
 
+#setup go path
+export PATH="$HOME/go/bin:$PATH"
+
 # setup custom script PATH
 export PATH="$PATH:$HOME/script"
 

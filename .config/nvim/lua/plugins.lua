@@ -125,7 +125,7 @@ local nt = require 'nvim-treesitter'
 nt.setup {
 	install_dir = vim.fn.stdpath('data') .. '/site'
 }
-nt.update { 'go', 'rust', 'lua', 'c', 'bash', 'asm', 'html' }
+nt.update { 'go', 'templ', 'rust', 'lua', 'c', 'bash', 'asm', 'html', 'javascript', 'typescript', 'tsx' }
 vim.api.nvim_create_autocmd('FileType', {
 	callback = function()
 		pcall(vim.treesitter.start)

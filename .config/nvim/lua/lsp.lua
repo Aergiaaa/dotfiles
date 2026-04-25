@@ -1,8 +1,13 @@
+---@diagnostic disable: need-check-nil
+
 local enabled = true -- completion on by default
 vim.api.nvim_create_autocmd('LspAttach', {
 	callback = function(ev)
 		local client = vim.lsp.get_client_by_id(ev.data.client_id)
-		if client and client:supports_method('textDocument/completion') then
+
+		local force = client and client.name == 'templ'
+
+		if client and (force or client:supports_method('textDocument/completion')) then
 			vim.lsp.completion.enable(true, client.id, ev.buf, {
 				autotrigger = false,
 				silent = true
@@ -81,6 +86,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 	end,
 })
 
+
 -- LUA
 vim.lsp.config('lua_ls', {
 	cmd = { 'lua-language-server' },
@@ -127,6 +133,13 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.lsp.config('gopls', {
 	cmd = { 'gopls' },
 	filetypes = { 'go', 'gomod' },
+	root_markers = { 'go.sum', 'go.mod', '.git' },
+})
+
+-- TEMPL
+vim.lsp.config('templ', {
+	cmd = { 'templ', 'lsp' },
+	filetypes = { 'templ' },
 	root_markers = { 'go.sum', 'go.mod', '.git' }
 })
 
@@ -196,14 +209,9 @@ local ft_servers = {
 	javascriptreact = 'ts_ls',
 	typescriptreact = 'ts_ls',
 	vue             = 'ts_ls',
+	templ           = 'templ',
 }
 
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = vim.tbl_keys(ft_servers),
-	callback = function(ev)
-		local server = ft_servers[ev.match]
-		if server then
-			vim.lsp.enable(server)
-		end
-	end,
-})
+for _, server in pairs(ft_servers) do
+	vim.lsp.enable(server)
+end

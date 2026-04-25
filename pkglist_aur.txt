@@ -13,6 +13,7 @@ python-pycookiecheat
 python-pywalfox
 seclists
 subfinder
+tailwindcss-cli
 transset-df
 ttf-noto-sans-cjk-vf
 ttf-twemoji-color
