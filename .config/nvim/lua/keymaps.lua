@@ -54,7 +54,8 @@ end
 -- utils keymap
 map('n', '<leader>ss', ':source<CR>')
 map('n', '<leader>w', ':w<CR>', { silent = true })
-map('n', '<leader>!', ':q!<CR>', { silent = true })
+map('n', '<leader>!', ':q<CR>', { silent = true })
+map('n', '<leader>`', ':q!<CR>', { silent = true })
 map('n', '<leader><Tab>', ':e #<CR>')
 map("i", "<C-H>", "<C-W>", { silent = true })
 map({ 'n', 'v', 'x' }, '<leader>y', '"+y<CR>')
