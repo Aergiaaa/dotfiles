@@ -33,6 +33,7 @@ jless
 jq
 kitty
 lib32-mesa
+libvirt
 libxinerama
 linux-firmware
 linux-zen
@@ -59,12 +60,12 @@ picom
 pipewire-alsa
 pipewire-pulse
 pulsemixer
-putty
 python-colorthief
 python-mutagen
 python-pywal
 python-setuptools
 qemu-base
+qemu-full
 qutebrowser
 radeontop
 ripgrep
