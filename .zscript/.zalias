@@ -47,7 +47,7 @@ alias b="btop"
 alias todo="n ~/jadwal.todo"
 alias coret="n ~/coret.txt"
 
-alias cat=bat
+alias cat=cat
 
 alias fw="sudo ufw"
 
@@ -70,5 +70,6 @@ alias -s mp4='mpv'
 alias -g JQ='| jq'
 alias -g GR='| grep'
 alias -g BT='| bat'
+alias -g CLIP='xclip -selection clipboard'
 
 unalias gsh

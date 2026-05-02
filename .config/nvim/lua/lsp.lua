@@ -81,7 +81,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 		-- accept
 		vim.keymap.set('i', '<CR>', function()
-			return vim.fn.pumvisible() == 1 and '<C-y>' or '<CR>'
+			if vim.fn.pumvisible() == 1 then
+				return '<C-y><Cmd>nohl<CR>'
+			end
+			return '<CR>'
 		end, { buffer = ev.buf, expr = true })
 	end,
 })

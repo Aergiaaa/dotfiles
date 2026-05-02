@@ -5,7 +5,6 @@ github-copilot-cli
 gnu-netcat
 input-remapper
 neovim-remote
-opentabletdriver
 protonup-qt
 python-colorzero
 python-haishoku
@@ -17,7 +16,6 @@ tailwindcss-cli
 transset-df
 ttf-noto-sans-cjk-vf
 ttf-twemoji-color
-webkit2gtk
 win2xcur
 yay
 yay-debug

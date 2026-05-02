@@ -11,8 +11,8 @@ map("i", '"', '""<Left>', { noremap = true, silent = true })
 map("i", "'", "''<Left>", { noremap = true, silent = true })
 
 -- split window
-map('n', '<leader>vv', ':vsplit<CR>', { silent = true })
-map('n', '<leader>vh', ':split<CR>', { silent = true })
+map('n', '<leader>vv', ':vsplit<CR>:Pick buffers<CR>', { silent = true })
+map('n', '<leader>vh', ':split<CR>:Pick buffers<CR>', { silent = true })
 map('n', '<leader>vr', ':only<CR>', { silent = true })
 
 -- scroll navigation
