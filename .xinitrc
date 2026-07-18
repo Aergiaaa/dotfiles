@@ -1,5 +1,3 @@
-xset s off -dpms &
-
 picom -b &
 
 wal -i ~/pict/memship_wp/*June*without*&
@@ -12,6 +10,12 @@ if ! pgrep -u "$USER" ssh-agent > /dev/null; then
 	eval "$(ssh-agent)"
 fi
 
+/usr/lib/xfce-polkit/xfce-polkit &
+
 (sleep 2 && input-remapper-control --command autoload) &
 
-dwm
+xset s off
+xset s noblank
+xset -dpms &
+
+exec dwm

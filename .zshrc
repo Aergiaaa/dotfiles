@@ -72,6 +72,8 @@ source ~/.zscript/.zalias
 source ~/.zscript/.zkey
 source ~/.zscript/.zfunc
 
+xrdb -merge ~/.cache/wal/colors.Xresources
+
 #exec init func
 c
 ff

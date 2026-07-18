@@ -3,6 +3,10 @@ sd(){
   cd $(fd -H -t d | fzf)
 }
 
+wa(){
+	wal -n -i $1 --backend $2
+}
+
 wf() {
 	wd $(wd list | awk 'NR > 1 {print $1}' | fzf)
 }

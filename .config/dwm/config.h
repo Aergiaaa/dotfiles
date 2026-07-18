@@ -33,7 +33,7 @@ static const Rule rules[] = {
      */
     /* class      instance    title       tags mask     isfloating   monitor */
     {"qutebrowser", NULL, NULL, 1 << 1, 0, -1},
-    {"kitty", NULL, NULL, 1 << 0, 0, -1},
+    {"st", NULL, NULL, 1 << 0, 0, -1},
     {"discord", NULL, NULL, 1 << 2, 0, -1},
     {"steam", NULL, NULL, 1 << 3, 0, -1},
     {"zoom", NULL, NULL, 1 << 3, 0, -1},
@@ -68,7 +68,7 @@ static const Layout layouts[] = {
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd)                                                             \
   {                                                                            \
-    .v = (const char *[]) { "/usr/local/bin/kitty", "-c", cmd, NULL }          \
+    .v = (const char *[]) { "/usr/local/bin/st", "-c", cmd, NULL }             \
   }
 
 #define STATUSBAR "dwmblocks"
@@ -80,9 +80,8 @@ static const char *dmenucmd[] = {
     "dmenu_run", "-m",  dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf",
     col_fonts,   "-sb", col_main, "-sf", col_fonth, "-l",  "3",       NULL};
 
-static const char *termcmd[] = {"kitty", "-e", "zsh", "-c", "tmux", NULL};
+static const char *termcmd[] = {"st", "-e", "zsh", NULL};
 static const char *browserlaunch[] = {"qutebrowser", NULL};
-
 
 static const char *clip[] = {"screenshot.sh", NULL};
 static const char *record[] = {"screenrecord.sh", NULL};

@@ -36,6 +36,9 @@ end)
 map('n', '<leader>>', function()
 	vim.cmd('res -' .. vim.v.count1)
 end)
+map('n', '<M-a>', '0')
+map('n', '<M-d>', '$')
+
 
 -- lsp keymap
 map({ 'n', 'i' }, '<C-s>', function() vim.lsp.buf.signature_help() end)

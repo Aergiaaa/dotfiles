@@ -1,0 +1,14 @@
+# NetSurf cookies file.
+#
+# Lines starting with a '#' are comments, blank lines are ignored.
+#
+# All lines prior to "Version:	102" are discarded.
+#
+# Version	Domain	Domain from Set-Cookie	Path	Path from Set-Cookie	Secure	HTTP-Only	Expires	Last used	No destroy	Name	Value	Value was quoted	Scheme	URL	Comment
+Version:	102
+0	.google.co.uk	1	/	1	1	0	1780208622	1780208331	0	__Secure-STRP	ANmZwa0Ndoc2wz_glZF8ZfHvJNtaPk3jIuC7DKUQCUk_A7G1ltBn_J3bh7h5mOrdvMpBPsmyIvCwUMToB6x0uzr4_GRiXeGTuc96	0	unused	unused	
+0	.google.co.uk	1	/	1	1	1	1795760322	1780208331	0	AEC	AaJma5vRJw8OmbaIwXlbGt2tQa4s9-WPNuDWLtA3nqfr7aD4uDPG6qx3qA	0	unused	unused	
+0	.google.co.uk	1	/	1	0	1	1796019522	1780208331	0	NID	531=laCm_zYtdB-botRRwngqDcOEAMduDLCXbo0HZWFqmrezF22ajWRy56YTOCdnMwkvYbrfNtkuQElWeoCgVH5ITJ4lbRqH9nF9bp3Ft-WyXMZSb4Ep2jRZOxlW3M9_AY1f9UQzW_8WFyC_mf31VLoCOeFUUVxXALCpNNQfasDom3qlkwTXL_DojZVpwbfjFQ-s5vrV3MAiQWPDvKG_fpOfieU	0	unused	unused	
+0	.google.com	1	/	1	1	0	1780208631	1780208335	0	__Secure-STRP	ANmZwa3J_AZpAcXXNs7h-yhQGF4Dd9gaOsXkcdSVGAEW5orZZ0kC6EQgCAqID4O-nAZQ8KseTvVvszOGmwFxSqvnYNBY_p144DmY	0	unused	unused	
+0	.google.com	1	/	1	1	1	1795760331	1780208335	0	AEC	AaJma5taGnyKwLWAAnfAvXbzF2dkVhB02JNKmPwXDZXr_ubXYuSH4IZP7JE	0	unused	unused	
+0	.google.com	1	/	1	0	1	1796019531	0	0	NID	531=CrMDQreMDvQCjQREY-NOxRFNBpyQAbztmHwqvVAz5nvxdfbfNJxqqGPzjHsLm_Uc-Pr8Z2nsLKfLBMc39Q8brAE5Wxw04A8CSQckCVHoUkNE2Uli20CYkZZeR4qJrLN6cTzDMC1A3vwSwGJ3gCrGG4I2mA5jHRU9QUX8to9NCqPUzhwrz2NIEqcrfB432pexWJBFAVSwwK8LGrwywQX78Bc	0	unused	unused	

@@ -8,10 +8,11 @@ bob
 brightnessctl
 btop
 bun
-cmatrix
 coreutils
 discord
 dnsmasq
+docker
+docker-compose
 dunst
 efibootmgr
 fastfetch
@@ -37,10 +38,12 @@ libvirt
 libxinerama
 linux-firmware
 linux-zen
+linux-zen-headers
 lxappearance
 man-db
 man-pages
 mkvtoolnix-cli
+mpc
 mpd
 mpv
 multilib-devel
@@ -59,6 +62,7 @@ perl-image-exiftool
 picom
 pipewire-alsa
 pipewire-pulse
+postgresql
 pulsemixer
 python-colorthief
 python-mutagen
@@ -88,6 +92,8 @@ ttf-firacode-nerd
 ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols
 ufw
+uv
+virt-manager
 wget
 wine
 wine-mono
@@ -102,6 +108,7 @@ xorg-fonts-100dpi
 xorg-server
 xorg-xev
 xorg-xinit
+xorg-xinput
 xorg-xlsfonts
 xorg-xset
 xorg-xsetroot

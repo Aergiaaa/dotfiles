@@ -1,11 +1,15 @@
-local ls = require "luasnip"
-local s = ls.snippet
-local t = ls.text_node
-local i = ls.insert_node
-local c = ls.choice_node
-local f = ls.function_node
-local fmt = require "luasnip.extras.fmt".fmt
-local rep = require "luasnip.extras".rep
+require "snippet_utils"
+
+ls = require "luasnip"
+s = ls.snippet
+t = ls.text_node
+i = ls.insert_node
+c = ls.choice_node
+f = ls.function_node
+d = ls.dynamic_node
+sn = ls.snippet_node
+fmt = require "luasnip.extras.fmt".fmt
+rep = require "luasnip.extras".rep
 
 local map = vim.keymap.set
 
@@ -24,7 +28,7 @@ end, { silent = true }
 )
 
 
-map({ 'i', 's' }, '<C-b>', function()
+map({ 'i', 's' }, '<C-c>', function()
 	if ls.jumpable(-1) then
 		ls.jump(-1)
 	end
@@ -78,6 +82,9 @@ ls.add_snippets("lua", {
 		}))
 })
 
+ls.add_snippets("templ", {
+})
+
 ls.add_snippets("go", {
 	-- use "for"
 	-- for <> := <>; <>; <> {
@@ -91,6 +98,21 @@ ls.add_snippets("go", {
 		]], {
 			i(1, 'i'), i(2), i(3, 'i<smth'), i(4, 'i++'), i(5)
 		})),
+
+	-- use "iferr"
+	-- if err != nil {
+	--	return <>
+	-- }
+	s("iferr", fmt(
+		[[
+		if err != nil {{
+			return {}
+		}}
+		]], {
+			i(1)
+		}
+	)),
+
 
 	-- use "foreach"
 	-- for <>, <> := range <> {
@@ -106,7 +128,13 @@ ls.add_snippets("go", {
 				t(''),
 				fmt([[{}, {}]], { i(1), i(2) })
 			}), i(2), i(3)
-		})),
+		}
+	)),
+
+	s("wr", {
+		t("w http.ResponseWriter, r *http.Request"),
+	}
+	),
 
 	-- use "if"
 	-- if <<err|''|err <:>= <>> != nil>|'' {
@@ -180,7 +208,48 @@ ls.add_snippets("go", {
 		})),
 
 	-- use "met"
-	-- func (<w *What>) <Name>(<>) <> {
+	-- func (<s> <Struct>) <Name>(<>) <> {
+	-- <<>|<>
+	-- return <>>
+	-- }
+	s("met", fmt(
+		[[
+		func ({} {}) {}({}) {}
+		]], {
+			f(function(args)
+				local struct = args[1][1]
+				local name = struct:gsub("^%*", "")
+				return name:sub(1, 1):lower()
+			end, { 1 }),
+			d(1, function()
+				return sn(nil, { c(1, get_go_structs()) })
+			end),
+			i(2, 'Init'), i(3),
+			c(4, {
+				fmt(
+					[[
+				{{
+					{}
+				}}
+				]], {
+						i(1)
+					}),
+				fmt(
+					[[
+				{} {{
+					{}
+					return {}
+				}}
+				]], {
+						i(1), i(2), i(3)
+					}
+				)
+			})
+		}
+	)),
+
+	-- use "Struct.met"
+	-- func (<s *Struct>) <Name>(<>) <> {
 	-- 		<<>|<>
 	-- 		return <>>
 	-- }

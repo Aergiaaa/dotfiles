@@ -1,4 +1,5 @@
 bridge-utils
+burpsuite
 dnslookup
 ffuf
 github-copilot-cli
@@ -12,11 +13,11 @@ python-pycookiecheat
 python-pywalfox
 seclists
 subfinder
-tailwindcss-cli
 transset-df
 ttf-noto-sans-cjk-vf
 ttf-twemoji-color
 win2xcur
+xfce-polkit
 yay
 yay-debug
 zen-browser-bin
