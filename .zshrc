@@ -40,15 +40,6 @@ export EDITOR="bob run nightly"
 
 export MUSIC="$HOME/music"
 
-# setup govm
-export PATH="$HOME/.govm/shim:$PATH"
-
-#setup go path
-export PATH="$HOME/go/bin:$PATH"
-
-# setup custom script PATH
-export PATH="$PATH:$HOME/script"
-
 # setup wallpaper
 export WALLPAPER=~/pict/memship_wp/*June*without*
 
@@ -68,9 +59,9 @@ if [[ -z "$DISPLAY" ]] && [[ $(tty) = /dev/tty1 ]]; then
 fi
 
 # source all user defined config
-source ~/.zscript/.zalias
-source ~/.zscript/.zkey
-source ~/.zscript/.zfunc
+source ~/dotfiles/.zscript/.zalias
+source ~/dotfiles/.zscript/.zkey
+source ~/dotfiles/.zscript/.zfunc
 
 xrdb -merge ~/.cache/wal/colors.Xresources
 

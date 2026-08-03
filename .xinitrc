@@ -18,4 +18,4 @@ xset s off
 xset s noblank
 xset -dpms &
 
-exec dwm
+exec dwm > ~/.dwm.log 2>&1

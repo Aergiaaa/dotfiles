@@ -1,5 +1,3 @@
-#!/bin/sh
-
 bright=$(brightnessctl g)
 max_bright=$(brightnessctl m)
 

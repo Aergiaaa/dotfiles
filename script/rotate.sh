@@ -1,5 +1,3 @@
-#!/bin/sh
-
 direction=$1
 
 echo $direction

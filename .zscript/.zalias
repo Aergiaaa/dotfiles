@@ -1,11 +1,10 @@
 configFile="~/.zshrc"
-configDir="~/.zscript"
-termDir="~/.config/kitty/kitty.conf"
-nvimDir="~/.config/nvim"
+configDir="~/dotfiles/.zscript"
+nvimDir="~/dotfiles/nvim"
 tmuxConf="~/.tmux.conf"
-wmConf="~/.config/dwm"
+wmConf="~/dotfiles/dwm"
+nixDir="~/dotfiles/nixos"
 
-alias sudo='sudo '
 
 alias nvim="NVIM_LISTEN_ADDRESS=/tmp/nvimsocket vim"
 
@@ -31,10 +30,11 @@ alias hc="tput reset;restart_wall;clear"
 alias a="alias"
 alias bashing="source $configFile"
 
+alias edin="n $nixDir"
 alias edit="n $configDir"
-alias edid="sudo -E nvr --remote $wmConf"
+alias edid="n $wmConf"
 alias edik="n $termDir"
-alias edin="n $nvimDir"
+alias ediv="n $nvimDir"
 alias edix="n $tmuxConf"
 
 alias sound="pulsemixer"

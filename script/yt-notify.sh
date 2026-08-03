@@ -1,5 +1,3 @@
-#!/bin/sh
-
 CHAN_ID="${1:?Usage: $0 <channel_id>}"
 INTERVAL=60
 FEED_URL="https://www.youtube.com/feeds/videos.xml?channel_id=$CHAN_ID"

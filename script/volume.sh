@@ -1,5 +1,3 @@
-#!/bin/sh
-
 opt=$1
 scale=$2
 

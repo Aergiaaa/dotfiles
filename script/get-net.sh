@@ -1,5 +1,3 @@
-#!/bin/bash
-
 stats=$(nmcli -t -f GENERAL.TYPE,GENERAL.STATE d show)
 
 wifi_state=$(echo "$stats" | grep -A1 "GENERAL.TYPE:wifi$" | grep "GENERAL.STATE" | grep -o '^[^:]*:[0-9]*' | grep -o '[0-9]*$')
