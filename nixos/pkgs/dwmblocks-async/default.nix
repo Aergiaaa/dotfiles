@@ -1,10 +1,10 @@
-{ lib, stdenv, pkg-config, libxcb, libxcb-util }:
+{ lib, stdenv, pkg-config, libxcb, libxcb-util, self ? null }:
 
 stdenv.mkDerivation	{
 	pname = "dwmblocks-async";
 	version = "local";
 
-	src = /home/aergia/dotfiles/dwmblocks-async;
+	src = self + "/dwmblocks-async";
 
 	nativeBuildInputs = [ pkg-config ];
   buildInputs = [ libxcb libxcb-util ];

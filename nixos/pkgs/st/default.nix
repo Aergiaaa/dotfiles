@@ -1,4 +1,5 @@
-{ pkgs }:
+{ pkgs, self ? null }:
 pkgs.st.overrideAttrs (old: {
-  src = /home/aergia/dotfiles/st;
+  src = self + "/st";
 })
+

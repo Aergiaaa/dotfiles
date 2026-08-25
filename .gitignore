@@ -12,4 +12,5 @@ node_modules/
 .pki/
 .config/GIMP/
 .config/unity3d/
-
+result
+result-*

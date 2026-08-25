@@ -1,4 +1,4 @@
-{ pkgs }:
+{ pkgs, self ? null }:
 pkgs.dmenu.overrideAttrs (old: {
-  src = /home/aergia/dotfiles/dmenu;
+  src = self + "/dmenu";
 })

@@ -3,17 +3,19 @@
 {
   imports =
     [ 
-      /etc/nixos/hardware-configuration.nix
-			/etc/nixos/modules/boot.nix
-			/etc/nixos/modules/networking.nix
-			/etc/nixos/modules/audio.nix
-			/etc/nixos/modules/users.nix
-			/etc/nixos/modules/dev-pkgs.nix
-			/etc/nixos/modules/desktop.nix
-			/etc/nixos/modules/wm.nix
-			/etc/nixos/modules/color.nix
-			/etc/nixos/modules/game.nix
-			/etc/nixos/modules/ai.nix
+      ./hardware-configuration.nix
+			./modules/boot.nix
+			./modules/networking.nix
+			./modules/audio.nix
+			./modules/users.nix
+			./modules/dev-pkgs.nix
+			./modules/desktop.nix
+			./modules/wm.nix
+			./modules/color.nix
+			./modules/game.nix
+			./modules/ai.nix
+			./modules/mtp.nix
+			./modules/option.nix
     ];
 
   time.timeZone = "Asia/Jakarta";

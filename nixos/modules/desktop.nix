@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, self, ... }:
 let
-	suckless = pkgs.lib.mapAttrs (name: _: pkgs.callPackage /etc/nixos/pkgs/${name} { })
-		(builtins.readDir /etc/nixos/pkgs);
+	suckless = pkgs.lib.mapAttrs (name: _: pkgs.callPackage ../pkgs/${name} { inherit self; })
+		(builtins.readDir ../pkgs);
 in
 {
 	services = {
@@ -13,12 +13,6 @@ in
     nerd-fonts.fira-code
   ];
 
-	# security.wrappers.slock = {
-	# 	owner = "root";                                                                                                 
-	#   group = "root";                                                                                                 
-	#   capabilities = "cap_sys_resource+ep";                                                                           
-	#   source = "${suckless.slock}/bin/slock";                                                                         
-	# };
 	programs.slock = {
 		enable = true;
 		package = suckless.slock;
@@ -27,11 +21,14 @@ in
 	environment.systemPackages = 
 			builtins.attrValues (builtins.removeAttrs suckless [ "slock" ]) 
 			++ (with pkgs; [
+				ffmpeg-full
+
 				btop radeontop lm_sensors
 				rmpc mpd
+				libnotify
 				git gh wget
-				qutebrowser discord
-				fastfetch 
+				qutebrowser chromium discord
+				fastfetch zathura
 				xclip scrot dunst
 				picom feh fzf xrdb
 				fd

@@ -1,0 +1,2426 @@
+info_begin
+format: 2
+mpd_version: 0.24.13
+fs_charset: UTF-8
+tag: Artist
+tag: ArtistSort
+tag: Album
+tag: AlbumSort
+tag: AlbumArtist
+tag: AlbumArtistSort
+tag: Title
+tag: TitleSort
+tag: Track
+tag: Name
+tag: Genre
+tag: Mood
+tag: Date
+tag: OriginalDate
+tag: Composer
+tag: ComposerSort
+tag: Performer
+tag: Conductor
+tag: Work
+tag: Movement
+tag: MovementNumber
+tag: ShowMovement
+tag: Ensemble
+tag: Location
+tag: Grouping
+tag: Disc
+tag: Label
+tag: MUSICBRAINZ_ARTISTID
+tag: MUSICBRAINZ_ALBUMID
+tag: MUSICBRAINZ_ALBUMARTISTID
+tag: MUSICBRAINZ_TRACKID
+tag: MUSICBRAINZ_RELEASETRACKID
+tag: MUSICBRAINZ_WORKID
+tag: MUSICBRAINZ_RELEASEGROUPID
+info_end
+directory: bgm
+mtime: 1784481701
+begin: bgm
+song_begin: 2_23AM.mp3
+Time: 196.032
+Format: 48000:16:2
+mtime: 1784481698
+added: 1786043937
+song_end
+song_begin: 2_23AM.opus
+Time: 196.04
+Title: 2:23 AM / しゃろう
+Date: 20201004
+Artist: しゃろう Sharou
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481700
+added: 1786043937
+song_end
+song_begin: anybody-can-find-you(except-you).mp3
+Time: 131.401
+Artist: totheheart
+Title: hkmori - anybody can find love (except you.)
+Date: 2022
+Format: 48000:16:2
+mtime: 1784481698
+added: 1786043937
+song_end
+song_begin: bad-parenting.flac
+Time: 41.912
+Artist: Cydillirose
+Title: Bad Parenting Title Song—Old Yazoo  // Best Part // Slowed
+Date: 20240918
+Format: 48000:24:2
+mtime: 1784481698
+added: 1786043937
+song_end
+song_begin: Better-Days.mp3
+Time: 207.249
+Format: 48000:16:2
+mtime: 1784481698
+added: 1786043937
+song_end
+song_begin: better-days.opus
+Time: 207.26
+Title: LAKEY INSPIRED - Better Days
+Date: 20170514
+Artist: LAKEY INSPIRED
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481700
+added: 1786043937
+song_end
+song_begin: Cassette-Tape-Dream.mp3
+Time: 176.12800000000001
+Format: 48000:16:2
+mtime: 1784481698
+added: 1786043937
+song_end
+song_begin: cassette-tape-dream.opus
+Time: 176.14000000000001
+Title: Cassette Tape Dream / しゃろう
+Date: 20210131
+Artist: しゃろう Sharou
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481700
+added: 1786043937
+song_end
+song_begin: chess-type-beat1.mp3
+Time: 120.825
+Artist: The Vibe Guide
+Title: Chess Type Beat
+Date: 2025
+Format: 48000:16:2
+mtime: 1784481699
+added: 1786043937
+song_end
+song_begin: heavenly-breakcore-mix.opus
+Time: 1603.5
+Title: heavenly breakcore mix
+Date: 20250719
+Artist: nellaiiiii
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481700
+added: 1786043937
+song_end
+song_begin: ib-memory.mp3
+Time: 151.928
+Artist: nekorinadesu
+Title: Ib OST - "Memory" (Ib's Theme / Title Song)
+Date: 2012
+Format: 44100:16:2
+mtime: 1784481699
+added: 1786043937
+song_end
+song_begin: identity-voices(midnight-ver.).mp3
+Time: 314.359
+Format: 48000:16:2
+mtime: 1784481699
+added: 1786043937
+song_end
+song_begin: It's 2_59 am and you're betting your soul that you'll win [H5OAI6X3_XE].opus
+Time: 1825.9
+Title: It's 2:59 am and you're betting your soul that you'll win
+Date: 20251108
+Artist: Doplefy
+Genre: People & Blogs
+Format: 48000:16:2
+mtime: 1784481701
+added: 1786043937
+song_end
+song_begin: Land-of-Dreams.mp3
+Time: 148.143
+Format: 44100:16:2
+mtime: 1784481699
+added: 1786043937
+song_end
+song_begin: land-of-dreams.opus
+Time: 148.22
+Title: 'Land of Dreams' background music
+Date: 20230514
+Artist: Loficali
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481700
+added: 1786043937
+song_end
+song_begin: chess-type-beat2(slowed).mp3
+Time: 142.053
+Artist: joyful, Karen Hinosyan
+Title: chess (slowed)
+Album: chess
+Date: 2025
+Format: 48000:16:2
+mtime: 1784481699
+added: 1786043937
+song_end
+song_begin: chess-type-beat3(super-slowed).mp3
+Time: 180.02700000000002
+Artist: joyful, Karen Hinosyan
+Title: chess (super slowed)
+Album: Chess
+Date: 2025
+Format: 48000:16:2
+mtime: 1784481699
+added: 1786043937
+song_end
+song_begin: id_entity_voice_midnight_ver.opus
+Time: 314.38
+Title: id:entity voices （Midnight ver.）
+Date: 20230120
+Artist: hololive Indonesia, Datenkou, Farhan Sarasin, Farhan Sarasin
+Genre: Music
+Album: hololive music studio - Midnight
+Format: 48000:16:2
+mtime: 1784481701
+added: 1786043937
+song_end
+end: bgm
+directory: chill
+mtime: 1784481698
+begin: chill
+directory: chloe
+mtime: 1784481697
+begin: chill/chloe
+song_begin: Jadian-yuk.mp3
+Time: 182.717
+Format: 44100:16:2
+mtime: 1784481697
+added: 1786043937
+song_end
+song_begin: jadian-yuk.opus
+Time: 182.68
+Title: 【Original Song】 Jadian yuk - Chloe Pawapua
+Date: 20220827
+Artist: Chloe Pawapua Ch.『 Re:Memories 』
+Genre: Entertainment
+Format: 48000:16:2
+mtime: 1784481697
+added: 1786043937
+song_end
+song_begin: Lagu.mp3
+Time: 117.539
+Format: 44100:16:2
+mtime: 1784481697
+added: 1786043937
+song_end
+song_begin: lagu.opus
+Time: 117.5
+Title: 【Original Song】 Lagu:      - Chloe Pawapua
+Date: 20210729
+Artist: Chloe Pawapua Ch.『 Re:Memories 』
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481697
+added: 1786043937
+song_end
+song_begin: dari-aku-untuk-aku.opus
+Time: 169.14000000000001
+Title: Dari Aku untuk Aku
+Date: 20221011
+Artist: Chloe Pawapua
+Genre: Music
+Album: Dari Aku untuk Aku
+Format: 48000:16:2
+mtime: 1784481697
+added: 1786043937
+song_end
+end: chill/chloe
+directory: eng
+mtime: 1784481697
+begin: chill/eng
+song_begin: beanie.opus
+Time: 132.18
+Title: Chezile - Beanie
+Date: 20250109
+Artist: Minimal Sounds
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481697
+added: 1786043937
+song_end
+song_begin: Beanie1.mp3
+Time: 139.435
+Format: 44100:16:2
+mtime: 1784481697
+added: 1786043937
+song_end
+song_begin: Beanie2(slowed).mp3
+Time: 148.362
+Format: 44100:16:2
+mtime: 1784481697
+added: 1786043937
+song_end
+song_begin: blue-yung-kai.mp3
+Time: 221.297
+Artist: yung kai
+Title: yung kai - blue (Official Music Video)
+Date: 2024
+Format: 48000:16:2
+mtime: 1784481697
+added: 1786043937
+song_end
+song_begin: from-the-start.opus
+Time: 169.56
+Title: Laufey - From The Start (Official Music Video)
+Date: 20230821
+Artist: Laufey
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481697
+added: 1786043937
+song_end
+song_begin: I-Love-You-So.mp3
+Time: 160.008
+Format: 48000:16:2
+mtime: 1784481697
+added: 1786043937
+song_end
+song_begin: i-love-you-so.opus
+Time: 160.02
+Title: The Walters -- I Love You So
+Date: 20141129
+Artist: The Walters
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481697
+added: 1786043937
+song_end
+song_begin: beanie-slowed.opus
+Time: 148.36
+Title: Beanie (Slowed)
+Date: 20240506
+Artist: 10X
+Genre: Music
+Album: 47
+Format: 48000:16:2
+mtime: 1784481697
+added: 1786043937
+song_end
+end: chill/eng
+song_begin: cat-loving-dangdut.mp3
+Time: 169.424
+Artist: revemayuzumi
+Title: Cat Loving - Dangdut At 25:00
+Date: 2024
+Format: 48000:16:2
+mtime: 1784481698
+added: 1786043937
+song_end
+song_begin: garam-dan-madu.mp3
+Time: 184.052
+Artist: antinrml
+Title: Tenxi, Naykilla & Jemsii - Garam & Madu (Sakit Dadaku) (Official Music Video)
+Date: 2024
+Format: 48000:16:2
+mtime: 1784481698
+added: 1786043937
+song_end
+song_begin: Tiny-Little-Adiantum.mp3
+Time: 350.954
+Format: 48000:16:2
+mtime: 1784481698
+added: 1786043937
+song_end
+song_begin: tiny-little-adiantum.opus
+Time: 350.98
+Title: タイニーリトル・アジアンタム
+Date: 20190815
+Artist: Shibayan Records
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481698
+added: 1786043937
+song_end
+end: chill
+directory: hololive
+mtime: 1784481696
+begin: hololive
+directory: anya
+mtime: 1784481683
+begin: hololive/anya
+song_begin: CHRONIC.opus
+Time: 195.36
+Title: 【Original Song MV】CHRONIC【Anya Melfissa】
+Date: 20250312
+Artist: Anya Melfissa Ch. hololive-ID
+Genre: People & Blogs
+Format: 48000:16:2
+mtime: 1784481683
+added: 1786043936
+song_end
+song_begin: CHRONIC-instrumental.opus
+Time: 235.969
+Title: CHRONIC（Instrumental）
+Date: 20250312
+Artist: Anya Melfissa, Johnny R, monii, Johnny R, monii, Ari
+Genre: Music
+Album: CHRONIC
+Format: 48000:16:2
+mtime: 1784481684
+added: 1786043936
+song_end
+end: hololive/anya
+directory: bijou
+mtime: 1784481696
+begin: hololive/bijou
+song_begin: prism-no-mahou-ludokano-remix.opus
+Time: 185.74
+Title: 【KOSEKI BIJOU】プリズムの魔法 - Prism no Mahou - (Ludokano Remix)【MV】
+Date: 20241124
+Artist: Koseki Bijou Ch. hololive-EN
+Genre: Gaming
+Format: 48000:16:2
+mtime: 1784481696
+added: 1786043937
+song_end
+song_begin: Prism-no-Mahou.mp3
+Time: 168.843
+Format: 48000:16:2
+mtime: 1784481696
+added: 1786043937
+song_end
+song_begin: Prism-no-Mahou(Ludonako-Remix).mp3
+Time: 185.72400000000002
+Format: 48000:16:2
+mtime: 1784481696
+added: 1786043937
+song_end
+song_begin: prism-no-mahou.opus
+Time: 168.86
+Title: プリズムの魔法
+Date: 20241007
+Artist: Koseki Bijou, YUC’e, YUC’e, YUC’e
+Genre: Music
+Album: Prism no Mahou
+Format: 48000:16:2
+mtime: 1784481696
+added: 1786043937
+song_end
+end: hololive/bijou
+directory: calli
+mtime: 1784481696
+begin: hololive/calli
+song_begin: end-of-a-life.mp3
+Time: 288.54200000000003
+Format: 48000:16:2
+mtime: 1784481696
+added: 1786043937
+song_end
+song_begin: end-of-a-live.opus
+Time: 288.56
+Title: [MV] end of a life - Calliope Mori (Original Song)
+Date: 20211001
+Artist: Mori Calliope Ch. hololive-EN
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481696
+added: 1786043937
+song_end
+song_begin: ijimeko-bully.opus
+Time: 245.04
+Title: [MV] いじめっ子 Bully- Calliope Mori
+Date: 20210826
+Artist: Mori Calliope Ch. hololive-EN
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481696
+added: 1786043937
+song_end
+song_begin: live-again.mp3
+Time: 202.048
+Artist: Mori Calliope Ch. hololive-EN
+Title: [Original Song] Live Again - Calliope Mori #holoMyth #hololiveEnglish
+Date: 2020
+Format: 48000:16:2
+mtime: 1784481696
+added: 1786043937
+song_end
+song_begin: ijimeko-bully-lofi.opus
+Time: 334.02
+Title: いじめっ子Bully （Lofi Ver.）
+Date: 20220221
+Artist: Mori Calliope, Mori Calliope, teniwoha, teniwoha, teniwoha
+Genre: Music
+Album: Your Mori. LO-FI ALBUM
+Format: 48000:16:2
+mtime: 1784481696
+added: 1786043937
+song_end
+end: hololive/calli
+directory: fauna
+mtime: 1784481695
+begin: hololive/fauna
+song_begin: let-me-stay-here.mp3
+Time: 211.022
+Artist: Ceres Fauna Ch. hololive-EN
+Title: 【Original Song MV】 Let Me Stay Here - Ceres Fauna
+Date: 2022
+Format: 48000:16:2
+mtime: 1784481695
+added: 1786043937
+song_end
+song_begin: let-me-stay-here.opus
+Time: 211.04
+Title: 【Original Song MV】 Let Me Stay Here - Ceres Fauna
+Date: 20220514
+Artist: Ceres Fauna Ch. hololive-EN
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481695
+added: 1786043937
+song_end
+song_begin: let-me-stay-here-instrumental.opus
+Time: 213.74
+Title: Let Me Stay Here （Instrumental）
+Date: 20220515
+Artist: Ceres Fauna, Shibayan, Shibayan
+Genre: Music
+Album: Let Me Stay Here
+Format: 48000:16:2
+mtime: 1784481695
+added: 1786043937
+song_end
+end: hololive/fauna
+directory: hajime
+mtime: 1784481695
+begin: hololive/hajime
+song_begin: countach.mp3
+Time: 197.834
+Artist: Hajime Ch. 轟はじめ ‐ ReGLOSS
+Title: 【Original】Countach/轟はじめ【Official MV】
+Date: 2025
+Format: 48000:16:2
+mtime: 1784481695
+added: 1786043937
+song_end
+song_begin: countach.opus
+Time: 197.86
+Title: 【Original】Countach/轟はじめ【Official MV】
+Date: 20250111
+Artist: Hajime Ch. 轟はじめ ‐ ReGLOSS
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481695
+added: 1786043937
+song_end
+end: hololive/hajime
+directory: holoen
+mtime: 1784481695
+begin: hololive/holoen
+directory: advent
+mtime: 1784481695
+begin: hololive/holoen/advent
+song_begin: team-tomodatchi.mp3
+Time: 149.835
+Artist: hololive English
+Title: 【Cover MV】 Team Tomodachi 【hololive English -Advent-】
+Format: 48000:16:2
+mtime: 1784481695
+added: 1786043937
+song_end
+end: hololive/holoen/advent
+end: hololive/holoen
+directory: holoid
+mtime: 1784481695
+begin: hololive/holoid
+song_begin: Hampa-Hatiku.mp3
+Time: 227.601
+Format: 44100:16:2
+mtime: 1784481694
+added: 1786043937
+song_end
+song_begin: HI-Street-Time.mp3
+Time: 178.294
+Format: 48000:16:2
+mtime: 1784481694
+added: 1786043937
+song_end
+song_begin: Medley-2024.mp3
+Time: 541.442
+Format: 48000:16:2
+mtime: 1784481694
+added: 1786043937
+song_end
+song_begin: PLAYBOY.mp3
+Time: 212.183
+Format: 44100:16:2
+mtime: 1784481694
+added: 1786043937
+song_end
+song_begin: Roman-Picisan.mp3
+Time: 193.549
+Artist: hololive Indonesia
+Title: 【#AREA15_Anniver5ary】 Roman Picisan - hololive ID 1st Generation (Cover Song)
+Date: 2025
+Format: 48000:16:2
+mtime: 1784481694
+added: 1786043937
+song_end
+song_begin: Selamat-Pagi.mp3
+Time: 245.005
+Artist: hololive Indonesia
+Title: 【#holoh3ro_annivdo3lo3】 Selamat Pagi - hololive ID 3rd Generation (Cover Song)
+Date: 2025
+Format: 48000:16:2
+mtime: 1784481695
+added: 1786043937
+song_end
+song_begin: Senandung-Jiwa.mp3
+Time: 226.046
+Format: 48000:16:2
+mtime: 1784481695
+added: 1786043937
+song_end
+end: hololive/holoid
+directory: ina
+mtime: 1784481694
+begin: hololive/ina
+song_begin: VIOLET.mp3
+Time: 206.889
+Format: 48000:16:2
+mtime: 1784481693
+added: 1786043937
+song_end
+song_begin: violet.opus
+Time: 206.9
+Title: 『VIOLET』 - Ninomae Ina'nis
+Date: 20210804
+Artist: Ninomae Ina'nis Ch. hololive-EN
+Genre: Gaming
+Format: 48000:16:2
+mtime: 1784481694
+added: 1786043937
+song_end
+song_begin: violet-acoustic-ver.opus
+Time: 206.02
+Title: VIOLET (Acoustic ver.)
+Date: 20260201
+Artist: Ninomae Ina'nis, LUMINA, seibin, seibin
+Genre: Music
+Album: re:VISION
+Format: 48000:16:2
+mtime: 1784481694
+added: 1786043937
+song_end
+end: hololive/ina
+directory: kaela
+mtime: 1784481693
+begin: hololive/kaela
+song_begin: Dekat-di-Hati.mp3
+Time: 266.634
+Format: 48000:16:2
+mtime: 1784481693
+added: 1786043937
+song_end
+song_begin: dahlah.opus
+Time: 191.32
+Title: dahlah.
+Date: 20250830
+Artist: Kaela Kovalskia, Prince Husein, Kaela Kovalskia, Eka Gustiwana, Prince Husein, Eka Gustiwana
+Genre: Music
+Album: dahlah.
+Format: 48000:16:2
+mtime: 1784481693
+added: 1786043937
+song_end
+end: hololive/kaela
+directory: kanade
+mtime: 1784481693
+begin: hololive/kanade
+song_begin: BANG-with-kobo.mp3
+Time: 203.818
+Artist: Kanaduy Ch. 【 Otonose Kanade Clips 】
+Title: BANG!!! - Kobo Kanaeru x Otonose Kanade Cover
+Date: 2025
+Format: 48000:16:2
+mtime: 1784481693
+added: 1786043937
+song_end
+end: hololive/kanade
+directory: kobo
+mtime: 1784481693
+begin: hololive/kobo
+song_begin: [Day 1] hololive 6th fes. color rise harmony stage 2 [4794652090175488].mp4
+Time: 222.016
+Format: 48000:f:2
+mtime: 1784481692
+added: 1786043936
+song_end
+song_begin: 1-HELP!!.mp3
+Time: 187.814
+Format: 48000:16:2
+mtime: 1784481686
+added: 1786043936
+song_end
+song_begin: 2-HELP!!(Acoustic-ver).mp3
+Time: 200.016
+Format: 44100:16:2
+mtime: 1784481686
+added: 1786043936
+song_end
+song_begin: bake-no-kawa.opus
+Time: 182.76
+Title: 【800】[feat. こぼ・かなえる, 重音テト, Giga＆TeddyLoid] 化けの皮 / MAISONdes
+Date: 20251108
+Artist: MAISONdes -メゾン・デ- / 日曜日のメゾンデ
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481692
+added: 1786043936
+song_end
+song_begin: Bear-the-bear-first-love,he-stumped.mp3
+Time: 222.016
+Format: 48000:16:2
+mtime: 1784481686
+added: 1786043936
+song_end
+song_begin: bokura-ga-kuru-kara.opus
+Time: 285.7
+Title: All Aboard! viv:ID CRUISE ~Bokura ga kuru kara~ - viv:ID CREW(Risu, Moona, Reine, Kobo) MV【Original】
+Date: 20231021
+Artist: hololive Indonesia
+Genre: Entertainment
+Format: 48000:16:2
+mtime: 1784481693
+added: 1786043936
+song_end
+song_begin: Bunny-Girl.mp3
+Time: 219.637
+Format: 44100:16:2
+mtime: 1784481686
+added: 1786043936
+song_end
+song_begin: Entah.mp3
+Time: 204.04500000000002
+Format: 48000:16:2
+mtime: 1784481686
+added: 1786043936
+song_end
+song_begin: entah.opus
+Time: 204.06
+Title: 【MV】 Entah.. - Kobo Kanaeru
+Date: 20231212
+Artist: Kobo Kanaeru Ch. hololive-ID
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481693
+added: 1786043936
+song_end
+song_begin: fond-memories.opus
+Time: 303.76
+Title: 【MV】Fond Memories - Kobo Kanaeru
+Date: 20250912
+Artist: Kobo Kanaeru Ch. hololive-ID
+Genre: Gaming
+Format: 48000:16:2
+mtime: 1784481692
+added: 1786043936
+song_end
+song_begin: gimme-gimme.mp3
+Time: 209.583
+Artist: WEKA
+Title: 〖Kobo Kanaeru〗BENI - Gimme gimme (WEKA remix)
+Date: 2022
+Format: 48000:16:2
+mtime: 1784481687
+added: 1786043936
+song_end
+song_begin: HELP.opus
+Time: 187.84
+Title: 【MV】HELP!!  - Kobo Kanaeru
+Date: 20240327
+Artist: Kobo Kanaeru Ch. hololive-ID
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481693
+added: 1786043936
+song_end
+song_begin: hi-street-time.opus
+Time: 178.32
+Title: HI:STREET TIME - hololive ID [Original Song]
+Date: 20240701
+Artist: hololive Indonesia
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481692
+added: 1786043936
+song_end
+song_begin: Hitomi-no-Jyuunin.mp3
+Time: 333.55400000000003
+Format: 44100:16:2
+mtime: 1784481687
+added: 1786043936
+song_end
+song_begin: Ichinichi-Hero.mp3
+Time: 238.12
+Format: 48000:16:2
+mtime: 1784481687
+added: 1786043936
+song_end
+song_begin: III.opus
+Time: 193.54
+Title: 【original anime MV】III【hololive/宝鐘マリン＆こぼ・かなえる】
+Date: 20240503
+Artist: Marine Ch. 宝鐘マリン
+Genre: Entertainment
+Format: 48000:16:2
+mtime: 1784481692
+added: 1786043936
+song_end
+song_begin: kobo-bilibili-stream.mp3
+Time: 333.009
+Format: 48000:16:2
+mtime: 1784481687
+added: 1786043936
+song_end
+song_begin: kobo-bilibili-stream.mp4
+Time: 333.009
+Format: 48000:f:2
+mtime: 1784481690
+added: 1786043936
+song_end
+song_begin: kokoro-wo-komete.mp3
+Time: 289.088
+Artist: HOT Wasabi
+Title: Kobo Kanaeru - Kokoro wo Komete (Aoi Teshima)【KARAOKE】
+Date: 2024
+Format: 48000:16:2
+mtime: 1784481690
+added: 1786043936
+song_end
+song_begin: midnight-mayoi.opus
+Time: 170.98
+Title: 【Audio Visualizer】Midnight Mayoi / Mori Calliope × Kobo Kanaeru
+Date: 20240607
+Artist: Mori Calliope Ch. hololive-EN
+Genre: Entertainment
+Format: 48000:16:2
+mtime: 1784481692
+added: 1786043936
+song_end
+song_begin: oh-asmara.opus
+Time: 247.72
+Title: 【MV】 Oh! Asmara - Kobo Kanaeru
+Date: 20230327
+Artist: Kobo Kanaeru Ch. hololive-ID
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481693
+added: 1786043937
+song_end
+song_begin: Oh!-Asmara.mp3
+Time: 247.698
+Format: 48000:16:2
+mtime: 1784481690
+added: 1786043936
+song_end
+song_begin: Propose.flac
+Time: 178.433
+Format: 48000:24:2
+mtime: 1784481686
+added: 1786043936
+song_end
+song_begin: propose.opus
+Time: 178.46
+Title: Propose - Kobo Kanaeru (Cover)
+Date: 20251001
+Artist: Kobo Kanaeru Ch. hololive-ID
+Genre: Gaming
+Format: 48000:16:2
+mtime: 1784481692
+added: 1786043936
+song_end
+song_begin: save-our-hearts.opus
+Time: 252.9
+Title: save our hearts - hololive ID 3rd Generation (Audio in 2 languages ID/JP) [Original Song]
+Date: 20240328
+Artist: hololive Indonesia
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481692
+added: 1786043936
+song_end
+song_begin: Sebatas-Video-Call.mp3
+Time: 214.25
+Format: 48000:16:2
+mtime: 1784481691
+added: 1786043936
+song_end
+song_begin: sebatas-video-call.opus
+Time: 214.26
+Title: 【MV】Sebatas Video Call - Kobo Kanaeru
+Date: 20240225
+Artist: Kobo Kanaeru Ch. hololive-ID
+Genre: Gaming
+Format: 48000:16:2
+mtime: 1784481693
+added: 1786043937
+song_end
+song_begin: senandung-jiwa.opus
+Time: 226.06
+Title: Senandung Jiwa - hololive ID [Original Song]
+Date: 20241030
+Artist: hololive Indonesia
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481692
+added: 1786043936
+song_end
+song_begin: Tampar.mp3
+Time: 165.738
+Format: 48000:16:2
+mtime: 1784481691
+added: 1786043936
+song_end
+song_begin: uta-ni-katachi-wa-nai-keredo.mp3
+Time: 342.70300000000003
+Artist: WEKA
+Title: 〖Kobo Kanaeru〗doriko feat. Hatsune Miku - Uta ni Katachi wa Nai Keredo (WEKA remix)
+Date: 2024
+Format: 48000:16:2
+mtime: 1784481691
+added: 1786043936
+song_end
+song_begin: ichi-nichi-hero.opus
+Time: 238.14000000000001
+Title: 1日ヒーロー
+Date: 20240226
+Artist: Kobo Kanaeru, Takanashi Kiara, HoneyWorks, MARUMOCHI, HoneyWorks, HoneyWorks, MARUMOCHI
+Genre: Music
+Album: Holohoneygaoka High School -Originals-
+Format: 48000:16:2
+mtime: 1784481693
+added: 1786043936
+song_end
+end: hololive/kobo
+directory: moona
+mtime: 1784481685
+begin: hololive/moona
+song_begin: Multiverse.mp3
+Time: 206.87800000000001
+Format: 48000:16:2
+mtime: 1784481685
+added: 1786043936
+song_end
+song_begin: Perisai-Jitu.mp3
+Time: 208.341
+Format: 48000:16:2
+mtime: 1784481685
+added: 1786043936
+song_end
+song_begin: Taut-Hati.mp3
+Time: 223.631
+Format: 48000:16:2
+mtime: 1784481685
+added: 1786043936
+song_end
+song_begin: taut-hati.opus
+Time: 223.64000000000001
+Title: 【Original Song】 Moona Hoshinova - Taut Hati【Official Animated MV】
+Date: 20240106
+Artist: Moona Hoshinova hololive-ID
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481685
+added: 1786043936
+song_end
+song_begin: perisai-jitu.opus
+Time: 201.78
+Title: Perisai Jitu
+Date: 20221125
+Artist: Moona Hoshinova, Donne Maula, Ari Renaldi, Ari Renaldi
+Genre: Music
+Album: Perisai Jitu
+Format: 48000:16:2
+mtime: 1784481685
+added: 1786043936
+song_end
+end: hololive/moona
+directory: nerissa
+mtime: 1784481684
+begin: hololive/nerissa
+song_begin: love-me-love-me-love-me(aishite-aishite-aishite).mp3
+Time: 255.674
+Artist: Nerissa Ravencroft Ch. hololive-EN
+Title: 【ENGLISH COVER】Love Me, Love Me, Love Me (Nerissa Ravencroft)
+Date: 2023
+Format: 48000:16:2
+mtime: 1784481685
+added: 1786043936
+song_end
+end: hololive/nerissa
+directory: risu
+mtime: 1784481684
+begin: hololive/risu
+song_begin: ALiCEu.opus
+Time: 275.86
+Title: 【Original Song】ALiCE&u【Ayunda Risu】
+Date: 20220115
+Artist: Ayunda Risu Ch. hololive-ID
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481684
+added: 1786043936
+song_end
+song_begin: metropolis.opus
+Time: 190.82
+Title: 【Original Song MV】メトロポリス (metropolis)【Ayunda Risu】
+Date: 20250117
+Artist: Ayunda Risu Ch. hololive-ID
+Genre: Entertainment
+Format: 48000:16:2
+mtime: 1784481684
+added: 1786043936
+song_end
+song_begin: mirror.opus
+Time: 253.26000000000002
+Title: 【Original Song MV】MIR//or【Ayunda Risu】
+Date: 20251121
+Artist: Ayunda Risu Ch. hololive-ID
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481684
+added: 1786043936
+song_end
+song_begin: Sing-Out.mp3
+Time: 231.375
+Format: 48000:16:2
+mtime: 1784481684
+added: 1786043936
+song_end
+song_begin: sing-out.opus
+Time: 231.4
+Title: 【Original Song】Sing Out【Ayunda Risu】
+Date: 20240927
+Artist: Ayunda Risu Ch. hololive-ID
+Genre: Entertainment
+Format: 48000:16:2
+mtime: 1784481684
+added: 1786043936
+song_end
+end: hololive/risu
+directory: su
+mtime: 1784481684
+begin: hololive/su
+song_begin: FG-ROADSER.mp3
+Time: 183.089
+Format: 44100:16:2
+mtime: 1784481684
+added: 1786043936
+song_end
+end: hololive/su
+directory: suisei
+mtime: 1784481684
+begin: hololive/suisei
+song_begin: Bibideba.mp3
+Time: 171.258
+Format: 48000:16:2
+mtime: 1784481684
+added: 1786043936
+song_end
+end: hololive/suisei
+end: hololive
+directory: hype
+mtime: 1784481683
+begin: hype
+song_begin: bad-parenting-funk.mp3
+Time: 79.48100000000001
+Artist: The Vibe Guide
+Title: BAD PARENTING FUNK V2
+Date: 2024
+Format: 44100:16:2
+mtime: 1784481683
+added: 1786043936
+song_end
+end: hype
+directory: jpop
+mtime: 1784481683
+begin: jpop
+directory: 32ki
+mtime: 1784481584
+begin: jpop/32ki
+song_begin: CIRCUS-PANIC.opus
+Time: 239.6
+Title: CIRCUS PANIC!!! (feat. 初音ミク)
+Date: 20240829
+Artist: サツキ, 初音ミク
+Genre: Music
+Album: Circus's Detail
+Format: 48000:16:2
+mtime: 1784481584
+added: 1786043934
+song_end
+end: jpop/32ki
+directory: 9lana
+mtime: 1784481570
+begin: jpop/9lana
+song_begin: BALALAIKA-acoustic-ver.opus
+Time: 228.18
+Title: 【MV】BALALAIKA Acoustic Ver. / 9Lana
+Date: 20250831
+Artist: 9Lana
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481570
+added: 1786043933
+song_end
+song_begin: BALALAIKA.opus
+Time: 191.56
+Title: 【MV】 「BALALAIKA」 /  9Lana
+Date: 20240223
+Artist: 9Lana
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481570
+added: 1786043933
+song_end
+song_begin: propose.opus
+Time: 233.70000000000002
+Title: 【MV】プロポーズ/ 9Lana cover
+Date: 20240823
+Artist: 9Lana
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481570
+added: 1786043933
+song_end
+end: jpop/9lana
+directory: AAAA
+mtime: 1784481578
+begin: jpop/AAAA
+song_begin: carnation.mkv
+Time: 154.748
+Artist: Elegant Sister (ES)
+Title: ああああ - carnation (BMS差分)
+Genre: Music
+Date: 20170727
+Format: 48000:f:2
+mtime: 1784481579
+added: 1786043934
+song_end
+end: jpop/AAAA
+directory: aiobahn
+mtime: 1784481583
+begin: jpop/aiobahn
+song_begin: tententengoku.mkv
+Time: 233.74800000000002
+Artist: Aiobahn
+Title: Aiobahn +81 feat. ななひら & P丸様。- 天天天国地獄国 (Official Music Video)
+Genre: Music
+Date: 20250204
+Format: 48000:f:2
+mtime: 1784481584
+added: 1786043934
+song_end
+end: jpop/aiobahn
+directory: Akasaki
+mtime: 1784481679
+begin: jpop/Akasaki
+song_begin: bunny-girl.mp3
+Time: 216.537
+Format: 48000:16:2
+mtime: 1784481679
+added: 1786043936
+song_end
+end: jpop/Akasaki
+directory: ali
+mtime: 1784481679
+begin: jpop/ali
+song_begin: wild-side.mp3
+Time: 103.677
+Artist: TheAnimeMen
+Title: BEASTARS OP | Wild Side (Official Music Video)
+Date: 2022
+Format: 48000:16:2
+mtime: 1784481679
+added: 1786043936
+song_end
+end: jpop/ali
+directory: camellia
+mtime: 1784481580
+begin: jpop/camellia
+song_begin: 1f1e33.opus
+Time: 167.38
+Title: Camellia - #1f1e33 (from Arcaea)
+Date: 20200528
+Artist: Camellia Official
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481580
+added: 1786043934
+song_end
+song_begin: 999.opus
+Time: 125.06
+Title: 999 ("666" Camellia's Unofficial / Rejected Remix)
+Date: 20230321
+Artist: Camellia Official
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481580
+added: 1786043934
+song_end
+song_begin: bad-apple-bad-psy-remix.opus
+Time: 295
+Title: Masayoshi Minoshima - Bad Apple!! feat.nomico (Camellia's "Bad Psy" Remix)
+Date: 20240501
+Artist: Camellia Official
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481580
+added: 1786043934
+song_end
+song_begin: crystallized.opus
+Time: 277.04
+Title: Camellia - crystallized (from album crystallized)
+Date: 20200815
+Artist: Camellia Official
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481580
+added: 1786043934
+song_end
+song_begin: seagull.opus
+Time: 200.02
+Title: Camellia - Seagull 「Official MV」
+Date: 20250322
+Artist: Camellia Official
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481580
+added: 1786043934
+song_end
+song_begin: 1f1e33-00102g-ver.opus
+Time: 341.26
+Title: #1f1e33 (#00102g version)
+Date: 20210710
+Artist: Camellia
+Genre: Music
+Album: U.U.F.O.
+Format: 48000:16:2
+mtime: 1784481580
+added: 1786043934
+song_end
+song_begin: ΩΩPARTS.opus
+Time: 408.26
+Title: ΩΩPARTS
+Date: 20210710
+Artist: Camellia
+Genre: Music
+Album: U.U.F.O.
+Format: 48000:16:2
+mtime: 1784481580
+added: 1786043934
+song_end
+song_begin: fiиorza.opus
+Time: 289.02
+Title: fiиorza
+Date: 20200317
+Artist: Camellia, Nanahira
+Genre: Music
+Album: Xronial Xero
+Format: 48000:16:2
+mtime: 1784481581
+added: 1786043934
+song_end
+end: jpop/camellia
+directory: Candygirl
+mtime: 1784481679
+begin: jpop/Candygirl
+song_begin: uh-oh.mp3
+Time: 165.511
+Format: 44100:16:2
+mtime: 1784481679
+added: 1786043936
+song_end
+song_begin: uh-oh.opus
+Time: 165.42000000000002
+Title: CANDYGIRL - Uh-Oh (Official Audio)
+Date: 20210623
+Artist: CANDYGIRL
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481679
+added: 1786043936
+song_end
+end: jpop/Candygirl
+directory: CPK
+mtime: 1784481571
+begin: jpop/CPK
+song_begin: world-is-mine.mkv
+Time: 225.90800000000002
+Artist: ‘Cosmic Princess Kaguya!’ OFFICIAL, ryo (supercell)
+Title: 【Official MV】ワールドイズマイン CPK! Remix (かぐや&月見ヤチヨ ver.) – ryo (supercell) / from 超かぐや姫！
+Genre: Film & Animation
+Date: 20260123
+Format: 48000:f:2
+mtime: 1784481572
+added: 1786043933
+song_end
+end: jpop/CPK
+directory: dateken
+mtime: 1784481585
+begin: jpop/dateken
+song_begin: alice-in-musicland-dazbee.flac
+Time: 711.1800000000001
+Genre: Music
+Title: Alice in Musicland ・*✧Special Edition
+Date: 20201023
+Artist: DAZBEE official
+Format: 48000:24:2
+mtime: 1784481589
+added: 1786043934
+song_end
+song_begin: honeymoon-un-deux-trois.mkv
+Time: 250.948
+Artist: DAZBEE official
+Title: 蜜月アン・ドゥ・トロワ (DATEKEN) ／ダズビー COVER
+Genre: Music
+Date: 20200228
+Format: 48000:f:2
+mtime: 1784481585
+added: 1786043934
+song_end
+end: jpop/dateken
+directory: EGOIST
+mtime: 1784481679
+begin: jpop/EGOIST
+song_begin: BANG-EGOIST.mp3
+Time: 190.20600000000002
+Artist: EGOIST Official YouTube Channel
+Title: EGOIST『BANG!!!』Music Video（TVアニメ「ビルディバイド -#000000-」オープニングテーマ）
+Date: 2021
+Format: 48000:16:2
+mtime: 1784481679
+added: 1786043936
+song_end
+end: jpop/EGOIST
+directory: emocosine
+mtime: 1784481578
+begin: jpop/emocosine
+song_begin: dream-with-me.mkv
+Time: 205.748
+Artist: EmoCosine
+Title: EmoCosine - Dream with Me
+Genre: Music
+Date: 20210526
+Format: 48000:f:2
+mtime: 1784481578
+added: 1786043933
+song_end
+end: jpop/emocosine
+directory: gmtn
+mtime: 1784481591
+begin: jpop/gmtn
+song_begin: witch-slave-album.opus
+Time: 690.04
+Title: [M3-2025秋] witch's slave 1st album "堕楽の園 -ILLEGAL PARADISE-" [NADC-0001]
+Date: 20251011
+Artist: gmtn.
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481590
+added: 1786043934
+song_end
+song_begin: artefatto vita [2ZoQ0eH-oII].opus
+Time: 338.04
+Title: artefatto vita
+Date: 20251114
+Artist: witch's slave
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481590
+added: 1786043934
+song_end
+song_begin: disperagioia (extended) [9h0XVayhlE8].opus
+Time: 267.7
+Title: disperagioia (extended)
+Date: 20251114
+Artist: witch's slave
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481591
+added: 1786043934
+song_end
+song_begin: disperagioia [4lSd0hhC2Y0].opus
+Time: 150.70000000000002
+Title: disperagioia
+Date: 20251114
+Artist: witch's slave
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481590
+added: 1786043934
+song_end
+song_begin: furioso melodia (extended) [YYPbxOM7qRE].opus
+Time: 363.90000000000003
+Title: furioso melodia (extended)
+Date: 20251114
+Artist: witch's slave
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481591
+added: 1786043934
+song_end
+song_begin: furioso melodia [Khkpmjb0Zjc].opus
+Time: 165.16
+Title: furioso melodia
+Date: 20251114
+Artist: witch's slave
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481590
+added: 1786043934
+song_end
+song_begin: Karula (feat. witch's slave) [FLXfqnJOZ0c].opus
+Time: 156.02
+Title: Karula (feat. witch's slave)
+Date: 20251114
+Artist: gmtn., witch's slave
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481590
+added: 1786043934
+song_end
+song_begin: MOR-G-VeRRAT [cx9sxn1N98U].opus
+Time: 132.04
+Title: MOR-G-VeRRAT
+Date: 20251114
+Artist: witch's slave
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481590
+added: 1786043934
+song_end
+song_begin: squartatrice (feat. kozato & LUZE) [extended] [HbZ4PlbzbC0].opus
+Time: 296.04
+Title: squartatrice (feat. kozato & LUZE) [extended]
+Date: 20251114
+Artist: gmtn., kozato, LUZE
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481591
+added: 1786043934
+song_end
+song_begin: squartatrice (feat. kozato & LUZE) [NG_YtOmaCPQ].opus
+Time: 138.70000000000002
+Title: squartatrice (feat. kozato & LUZE)
+Date: 20251114
+Artist: witch's slave, kozato, LUZE
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481590
+added: 1786043934
+song_end
+song_begin: シルヴェリューンの薔薇姫 [mdpC5Q5nar8].opus
+Time: 133.58
+Title: シルヴェリューンの薔薇姫
+Date: 20251114
+Artist: witch's slave
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481590
+added: 1786043934
+song_end
+song_begin: 堕楽の園 (extended) [LJGU_10V7GY].opus
+Time: 374.32
+Title: 堕楽の園 (extended)
+Date: 20251114
+Artist: witch's slave
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481591
+added: 1786043934
+song_end
+song_begin: 堕楽の園 [wX1EXB18Cjs].opus
+Time: 154.32
+Title: 堕楽の園
+Date: 20251114
+Artist: witch's slave
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481589
+added: 1786043934
+song_end
+song_begin: 断罪魔女 [hfV1yJ11m_0].opus
+Time: 168.82
+Title: 断罪魔女
+Date: 20251114
+Artist: witch's slave
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481590
+added: 1786043934
+song_end
+song_begin: 絶対なる殷賑の因果律 (original) [cbL8tvcKyzc].opus
+Time: 319.54
+Title: 絶対なる殷賑の因果律 (original)
+Date: 20251114
+Artist: witch's slave
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481590
+added: 1786043934
+song_end
+song_begin: 絶対なる殷賑の因果律 [9nCGURHw69k].opus
+Time: 170.82
+Title: 絶対なる殷賑の因果律
+Date: 20251114
+Artist: witch's slave
+Genre: Music
+Album: ILLEGAL PARADISE
+Format: 48000:16:2
+mtime: 1784481589
+added: 1786043934
+song_end
+end: jpop/gmtn
+directory: hiiragi_magnetite
+mtime: 1784481577
+begin: jpop/hiiragi_magnetite
+song_begin: tetoris.mkv
+Time: 142.588
+Artist: Hiiragi Magnetite
+Title: テトリス / 重音テトSV
+Genre: Music
+Date: 20241108
+Format: 48000:f:2
+mtime: 1784481578
+added: 1786043933
+song_end
+end: jpop/hiiragi_magnetite
+directory: hkmori
+mtime: 1784481572
+begin: jpop/hkmori
+song_begin: lost.mkv
+Time: 186.368
+Artist: totheheart
+Title: hkmori - lost
+Genre: Music
+Date: 20220921
+Format: 48000:f:2
+mtime: 1784481572
+added: 1786043933
+song_end
+end: jpop/hkmori
+directory: II-L
+mtime: 1784481577
+begin: jpop/II-L
+song_begin: the-earth.mkv
+Time: 131.848
+Artist: II-L
+Title: II-L ft. amelie xoxo - THE EARTH
+Genre: Music
+Date: 20221120
+Format: 48000:f:2
+mtime: 1784481577
+added: 1786043933
+song_end
+end: jpop/II-L
+directory: kenshi-yonezu
+mtime: 1784481679
+begin: jpop/kenshi-yonezu
+song_begin: IRIS-OUT.opus
+Time: 153.18
+Title: 米津玄師  Kenshi Yonezu - IRIS OUT
+Date: 20250915
+Artist: Kenshi Yonezu  米津玄師
+Format: 48000:16:2
+mtime: 1784481679
+added: 1786043936
+song_end
+end: jpop/kenshi-yonezu
+directory: laur
+mtime: 1784481579
+begin: jpop/laur
+song_begin: Exitium.mkv
+Time: 140.328
+Artist: Laur
+Title: Laur - Exitium [From WACCA]
+Genre: People & Blogs
+Date: 20190814
+Format: 48000:f:2
+mtime: 1784481580
+added: 1786043934
+song_end
+song_begin: Exitium-Extended.mkv
+Time: 255.488
+Artist: Laur
+Album: Collapse
+Title: Exitium (Extended)
+Genre: Music
+Date: 20211101
+Format: 48000:f:2
+mtime: 1784481579
+added: 1786043934
+song_end
+end: jpop/laur
+directory: moeshop
+mtime: 1784481679
+begin: jpop/moeshop
+song_begin: charm.mp3
+Time: 196.416
+Artist: Moe Shop
+Title: Moe Shop - Charm (w/ Puniden)
+Date: 2017
+Format: 48000:16:2
+mtime: 1784481679
+added: 1786043936
+song_end
+song_begin: Notice.mp3
+Time: 189.333
+Artist: Moe Shop
+Title: Moe Shop - Notice (w/ TORIENA)
+Date: 2018
+Format: 48000:16:2
+mtime: 1784481679
+added: 1786043936
+song_end
+end: jpop/moeshop
+directory: normal1zer
+mtime: 1784481584
+begin: jpop/normal1zer
+song_begin: DESTRUCTION321.mkv
+Time: 158.388
+Artist: Normal1zer
+Title: [Phigros Original] Normal1zer vs. Broken Nerdz - DESTRUCTION 3,2,1
+Genre: People & Blogs
+Date: 20230424
+Format: 48000:f:2
+mtime: 1784481585
+added: 1786043934
+song_end
+end: jpop/normal1zer
+directory: phyxinon
+mtime: 1784481570
+begin: jpop/phyxinon
+song_begin: marigold.mkv
+Time: 156.488
+Artist: ふぃくしのん / phyxinon
+Title: 【Deemo】Marigold 弾いてみた
+Genre: Music
+Date: 20180609
+Format: 48000:f:2
+mtime: 1784481571
+added: 1786043933
+song_end
+end: jpop/phyxinon
+directory: PSYQUI
+mtime: 1784481681
+begin: jpop/PSYQUI
+song_begin: Shuushin-orei.flac
+Time: 268.51300000000003
+Format: 48000:24:2
+mtime: 1784481681
+added: 1786043936
+song_end
+song_begin: CnB-feat-such.mkv
+Time: 144.948
+Artist: PSYQUI, Such
+Album: CHUNITHM ALL JUSTICE COLLECTION episode Ⅲ 4
+Title: C & B (feat. Such)
+Genre: Music
+Date: 20220717
+Format: 48000:f:2
+mtime: 1784481681
+added: 1786043936
+song_end
+song_begin: 就寝御礼 (Original Mix).opus
+Time: 268.52
+Title: 就寝御礼 (Original Mix)
+Date: 20200123
+Artist: PSYQUI
+Album: STYLEY! vol.2
+Format: 48000:16:2
+mtime: 1784481681
+added: 1786043936
+song_end
+end: jpop/PSYQUI
+directory: roughsketch
+mtime: 1784481583
+begin: jpop/roughsketch
+song_begin: 666_Extreme_full.mkv
+Time: 284.628
+Artist: Bruhtanium Onii-san
+Title: RoughSketch - 666 (Extreme Full Ver.)
+Genre: Music
+Date: 20211104
+Format: 48000:f:2
+mtime: 1784481582
+added: 1786043934
+song_end
+song_begin: 666.mkv
+Time: 120.44800000000001
+Artist: KonekoKitten grooms children
+Title: 【SDVX】 RoughSketch － 666 【NOFX】
+Genre: People & Blogs
+Date: 20200225
+Format: 48000:f:2
+mtime: 1784481582
+added: 1786043934
+song_end
+song_begin: distorted-floor-laur-remix.mkv
+Time: 257.188
+Artist: HARDCORE Alert [硬核警報]
+Title: RoughSketch - Distorted Floor (Laur Remix)
+Genre: Music
+Date: 20210110
+Format: 48000:f:2
+mtime: 1784481581
+added: 1786043934
+song_end
+song_begin: MAYHEM-Extreme-full.mkv
+Time: 265.068
+Artist: who
+Title: RoughSketch - MAYHEM (Extreme Full Ver.)
+Genre: Music
+Date: 20221103
+Format: 48000:f:2
+mtime: 1784481583
+added: 1786043934
+song_end
+song_begin: MAYHEM.mkv
+Time: 124.528
+Artist: KonekoKitten grooms children
+Title: 【SDVX】 RoughSketch x CANVAS feat. Quimar － MAYHEM 【NOFX】
+Genre: People & Blogs
+Date: 20201119
+Format: 48000:f:2
+mtime: 1784481583
+added: 1786043934
+song_end
+end: jpop/roughsketch
+directory: sasuke-haraguchi
+mtime: 1784481572
+begin: jpop/sasuke-haraguchi
+song_begin: medicine.mkv
+Time: 120.36800000000001
+Artist: 原口沙輔
+Title: イガク - 重音テト
+Genre: Music
+Date: 20240228
+Format: 48000:f:2
+mtime: 1784481572
+added: 1786043933
+song_end
+end: jpop/sasuke-haraguchi
+directory: team-grimoire
+mtime: 1784481577
+begin: jpop/team-grimoire
+song_begin: C18H27NO3.opus
+Time: 337.52
+Title: Team Grimoire - C18H27NO3
+Date: 20200916
+Artist: Strike44
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481577
+added: 1786043933
+song_end
+song_begin: dantalion.opus
+Time: 244.02
+Title: [Official] Team Grimoire - Dantalion [from Arcaea]
+Date: 20211030
+Artist: Team Grimoire Official
+Genre: Gaming
+Format: 48000:16:2
+mtime: 1784481576
+added: 1786043933
+song_end
+song_begin: grievous-lady-laur-remix.opus
+Time: 233.58
+Title: Team Grimoire vs Laur - Grievous Lady (Laur Remix)【Laur The BEST】
+Date: 20241110
+Artist: Laur
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481577
+added: 1786043933
+song_end
+song_begin: rrharil-game-ver.opus
+Time: 140.02
+Title: [Official] Team Grimoire - Rrhar'il (game ver.)[from Phigros]
+Date: 20220205
+Artist: Team Grimoire Official
+Genre: Gaming
+Format: 48000:16:2
+mtime: 1784481576
+added: 1786043933
+song_end
+song_begin: Grievous-Lady.opus
+Time: 141.26
+Title: Grievous Lady
+Date: 20200806
+Artist: Team Grimoire & Laur
+Genre: Music
+Album: Arcaea Sound Collection: Memories of Conflict
+Format: 48000:16:2
+mtime: 1784481577
+added: 1786043933
+song_end
+song_begin: Grievous-nothing-is-but-what-not.opus
+Time: 360.64
+Title: Grievous Lady -nothing is but what is not-
+Date: 20200806
+Artist: Team Grimoire & Laur
+Genre: Music
+Album: Arcaea Sound Collection: Memories of Conflict
+Format: 48000:16:2
+mtime: 1784481577
+added: 1786043933
+song_end
+song_begin: rrharil.opus
+Time: 232.16
+Title: Rrhar'il
+Date: 20231215
+Artist: Team Grimoire
+Genre: Music
+Album: Rrhar'il
+Format: 48000:16:2
+mtime: 1784481576
+added: 1786043933
+song_end
+end: jpop/team-grimoire
+directory: tn-shi
+mtime: 1784481570
+begin: jpop/tn-shi
+song_begin: annihilation-in-f-sharp-minor.opus
+Time: 164.82
+Title: tn-shi - Annihilation in F# Minor
+Date: 20230314
+Artist: tn-shi
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481570
+added: 1786043933
+song_end
+song_begin: contradiction.opus
+Time: 223.08
+Title: tn-shi - Contradiction
+Date: 20230721
+Artist: tn-shi
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481570
+added: 1786043933
+song_end
+song_begin: cyberfantasia.opus
+Time: 164.16
+Title: tn-shi - Cyberfantasia
+Date: 20230827
+Artist: tn-shi
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481570
+added: 1786043933
+song_end
+song_begin: hyperreality.opus
+Time: 152.62
+Title: 【CHUNITHM】tn-shi - hyperreality
+Date: 20251127
+Artist: tn-shi
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481570
+added: 1786043933
+song_end
+song_begin: synthesis.opus
+Time: 233.32
+Title: tn-shi - Synthesis.
+Date: 20231015
+Artist: tn-shi
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481570
+added: 1786043933
+song_end
+end: jpop/tn-shi
+directory: tomatoism
+mtime: 1784481572
+begin: jpop/tomatoism
+song_begin: someone-special.mkv
+Time: 218.648
+Artist: tomatoism
+Title: tomatoism - Someone Special (Official Audio)
+Genre: Music
+Date: 20220416
+Format: 48000:f:2
+mtime: 1784481573
+added: 1786043933
+song_end
+end: jpop/tomatoism
+directory: TUYU
+mtime: 1784481678
+begin: jpop/TUYU
+song_begin: Ano-yo-iki-no-basuni-notte-saraba.mp3
+Time: 195.81300000000002
+Format: 44100:16:2
+mtime: 1784481678
+added: 1786043936
+song_end
+song_begin: Doro-no-Bunsai.mp3
+Time: 193.95600000000002
+Format: 44100:16:2
+mtime: 1784481678
+added: 1786043936
+song_end
+song_begin: Kuraberarekko.mp3
+Time: 216.549
+Format: 44100:16:2
+mtime: 1784481678
+added: 1786043936
+song_end
+end: jpop/TUYU
+directory: vocaloid
+mtime: 1784481678
+begin: jpop/vocaloid
+directory: kanaria
+mtime: 1784481677
+begin: jpop/vocaloid/kanaria
+song_begin: Dec.mp3
+Time: 133.05
+Format: 44100:16:2
+mtime: 1784481677
+added: 1786043936
+song_end
+song_begin: Identity.mp3
+Time: 155.875
+Format: 44100:16:2
+mtime: 1784481677
+added: 1786043936
+song_end
+song_begin: QUEEN.mkv
+Time: 142.048
+Artist: Kanaria
+Title: 【GUMI】QUEEN【Kanaria】
+Genre: Music
+Date: 20220806
+Format: 48000:f:2
+mtime: 1784481678
+added: 1786043936
+song_end
+song_begin: QUEEN.mp3
+Time: 142.082
+Format: 44100:16:2
+mtime: 1784481677
+added: 1786043936
+song_end
+song_begin: Yoide-Shirazu.mp3
+Time: 135.024
+Format: 44100:16:2
+mtime: 1784481677
+added: 1786043936
+song_end
+end: jpop/vocaloid/kanaria
+directory: mikitoP
+mtime: 1784481677
+begin: jpop/vocaloid/mikitoP
+directory: ‎
+mtime: 1784481676
+begin: jpop/vocaloid/mikitoP/‎
+song_begin: 19151.mp4
+Time: 1506.441
+Format: 44100:f:2
+mtime: 1784481654
+added: 1786043935
+song_end
+song_begin: 19153.mp4
+Time: 1716.875
+Format: 44100:f:2
+mtime: 1784481661
+added: 1786043936
+song_end
+song_begin: 19154.mp4
+Time: 1443.794
+Format: 44100:f:2
+mtime: 1784481643
+added: 1786043935
+song_end
+song_begin: 19155.mp4
+Time: 1736.063
+Format: 44100:f:2
+mtime: 1784481638
+added: 1786043935
+song_end
+song_begin: 19157.mp4
+Time: 1205.851
+Format: 44100:f:2
+mtime: 1784481666
+added: 1786043936
+song_end
+song_begin: 19159.mp4
+Time: 2045.925
+Format: 44100:f:2
+mtime: 1784481675
+added: 1786043936
+song_end
+song_begin: 696969.mp3
+Time: 1716.883
+Format: 44100:16:2
+mtime: 1784481676
+added: 1786043936
+song_end
+song_begin: 696970.mp3
+Time: 2045.933
+Format: 44100:16:2
+mtime: 1784481677
+added: 1786043936
+song_end
+end: jpop/vocaloid/mikitoP/‎
+directory: invis
+mtime: 1784481633
+begin: jpop/vocaloid/mikitoP/invis
+song_begin: 19151.mp4
+Time: 1506.441
+Format: 44100:f:2
+mtime: 1784481611
+added: 1786043935
+song_end
+song_begin: 19153.mp4
+Time: 1716.875
+Format: 44100:f:2
+mtime: 1784481618
+added: 1786043935
+song_end
+song_begin: 19154.mp4
+Time: 1443.794
+Format: 44100:f:2
+mtime: 1784481599
+added: 1786043935
+song_end
+song_begin: 19155.mp4
+Time: 1736.063
+Format: 44100:f:2
+mtime: 1784481595
+added: 1786043934
+song_end
+song_begin: 19157.mp4
+Time: 1205.851
+Format: 44100:f:2
+mtime: 1784481622
+added: 1786043935
+song_end
+song_begin: 19159.mp4
+Time: 2045.925
+Format: 44100:f:2
+mtime: 1784481632
+added: 1786043935
+song_end
+song_begin: 19159a.mp4
+Time: 484.995
+Format: 44100:f:2
+mtime: 1784481635
+added: 1786043935
+song_end
+song_begin: 696969.mp3
+Time: 1716.883
+Format: 44100:16:2
+mtime: 1784481633
+added: 1786043935
+song_end
+song_begin: 696970.mp3
+Time: 2045.933
+Format: 44100:16:2
+mtime: 1784481633
+added: 1786043935
+song_end
+end: jpop/vocaloid/mikitoP/invis
+song_begin: shoujo-rei.mp3
+Time: 289.634
+Artist: mikitoP  Official
+Title: みきとP 『 少女レイ 』 MV
+Date: 2018
+Format: 48000:16:2
+mtime: 1784481677
+added: 1786043936
+song_end
+end: jpop/vocaloid/mikitoP
+directory: proseka
+mtime: 1784481592
+begin: jpop/vocaloid/proseka
+song_begin: CIRCUS-PANIC!!!.mp3
+Time: 239.653
+Format: 44100:16:2
+mtime: 1784481592
+added: 1786043934
+song_end
+song_begin: Hiasobi.mp3
+Time: 247.571
+Format: 44100:16:2
+mtime: 1784481592
+added: 1786043934
+song_end
+end: jpop/vocaloid/proseka
+song_begin: Igaku.mp3
+Time: 120.337
+Artist: キャラツ / Charaツ
+Title: イガク/Medicine - 原口沙輔/Sasuke Haraguchi [ENG SUB]
+Date: 2024
+Format: 48000:16:2
+mtime: 1784481678
+added: 1786043936
+song_end
+song_begin: Mesmerizer.mp3
+Time: 156.966
+Artist: 32ki
+Title: メズマライザー / 初音ミク・重音テトSV
+Date: 2024
+Format: 48000:16:2
+mtime: 1784481678
+added: 1786043936
+song_end
+song_begin: Tetoris.mp3
+Time: 142.57
+Artist: Hiiragi Magnetite
+Title: テトリス / 重音テトSV
+Date: 2024
+Format: 48000:16:2
+mtime: 1784481678
+added: 1786043936
+song_end
+end: jpop/vocaloid
+directory: wotaku
+mtime: 1784481575
+begin: jpop/wotaku
+song_begin: gehenna.mkv
+Time: 246.168
+Artist: wotaku
+Title: ジェヘナ(Gehenna) / wotaku feat. 初音ミク(Hatsune Miku)
+Genre: Music
+Date: 20190809
+Format: 48000:f:2
+mtime: 1784481575
+added: 1786043933
+song_end
+song_begin: snooze.mkv
+Time: 176.608
+Artist: wotaku
+Title: snooze / wotaku feat. SHIKI
+Genre: Music
+Date: 20210820
+Format: 48000:f:2
+mtime: 1784481576
+added: 1786043933
+song_end
+end: jpop/wotaku
+directory: xi
+mtime: 1784481574
+begin: jpop/xi
+song_begin: Halcyon.mkv
+Time: 310.988
+Artist: XI
+Album: Parousia
+Title: Halcyon
+Genre: Music
+Date: 20180219
+Format: 48000:f:2
+mtime: 1784481574
+added: 1786043933
+song_end
+song_begin: Anima.mkv
+Time: 270.82800000000003
+Artist: Xi
+Album: World Fragments
+Title: Anima
+Genre: Music
+Date: 20160610
+Format: 48000:f:2
+mtime: 1784481574
+added: 1786043933
+song_end
+end: jpop/xi
+directory: yorushika
+mtime: 1784481591
+begin: jpop/yorushika
+song_begin: Dakara-boku-wa-Ongaku-wo-Yameta.mp3
+Time: 246.177
+Format: 44100:16:2
+mtime: 1784481591
+added: 1786043934
+song_end
+song_begin: Hana-ni-Bourei.mp3
+Time: 242.3
+Format: 44100:16:2
+mtime: 1784481591
+added: 1786043934
+song_end
+song_begin: Itte.mp3
+Time: 243.43800000000002
+Format: 44100:16:2
+mtime: 1784481591
+added: 1786043934
+song_end
+song_begin: Tada-Kimi-ni-Hare.mp3
+Time: 199.877
+Format: 44100:16:2
+mtime: 1784481591
+added: 1786043934
+song_end
+end: jpop/yorushika
+directory: yuika
+mtime: 1784481591
+begin: jpop/yuika
+song_begin: Sukidakara.mp3
+Time: 298.353
+Format: 44100:16:2
+mtime: 1784481591
+added: 1786043934
+song_end
+end: jpop/yuika
+song_begin: non-breath-oblige-15-voice.mkv
+Time: 209.368
+Artist: 十五少女
+Title: 十 五 少 女（15 Voices）/// ノンブレス・オブリージュ - 十五少女 Cover 」Music Video
+Genre: People & Blogs
+Date: 20220315
+Format: 48000:f:2
+mtime: 1784481682
+added: 1786043936
+song_end
+song_begin: tententengokujigoku.opus
+Time: 233.74
+Title: Aiobahn +81 feat. ななひら & P丸様。- 天天天国地獄国 (Official Music Video)
+Date: 20250204
+Artist: Aiobahn
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481682
+added: 1786043936
+song_end
+song_begin: tententengokujigokugoku.opus
+Time: 230.26
+Title: Kobo, Zeta ♬天天天国地獄国 (Tententengokujigokugoku) - Aiobahn+81 ft. Nanahira & PMarusama @3DKobornDay2025
+Date: 20251214
+Artist: KeiHoloArchive
+Genre: People & Blogs
+Format: 48000:16:2
+mtime: 1784481683
+added: 1786043936
+song_end
+song_begin: testify.mkv
+Time: 214.368
+Artist: 星熊南巫(hoshikuma minami)
+Title: 【Arcaea】"Testify" -Official Music Video- void (Mournfinale) feat. 星熊南巫
+Genre: Gaming
+Date: 20220715
+Format: 48000:f:2
+mtime: 1784481682
+added: 1786043936
+song_end
+song_begin: exitium-extended.opus
+Time: 255.48000000000002
+Title: Exitium (Extended)
+Date: 20211101
+Artist: Laur
+Genre: Music
+Album: Collapse
+Format: 48000:16:2
+mtime: 1784481681
+added: 1786043936
+song_end
+song_begin: world-is-mine.opus
+Time: 226.76
+Title: ワールドイズマイン (かぐや&月見ヤチヨ ver.) [CPK! Remix]
+Date: 20260122
+Artist: ryo (supercell), Kaguya(cv.Yuko Natsuyoshi), Yachiyo Runami(cv.Saori Hayami)
+Genre: Music
+Album: Cosmic Princess Kaguya!
+Format: 48000:16:2
+mtime: 1784481683
+added: 1786043936
+song_end
+song_begin: bookmaker.opus
+Time: 263.36
+Title: Bookmaker
+Date: 20190418
+Artist: Kobaryo
+Genre: Music
+Album: Fionaredica
+Format: 48000:16:2
+mtime: 1784481683
+added: 1786043936
+song_end
+song_begin: grievous-lady-laur-remix.opus
+Time: 233.16
+Title: Grievous Lady (Laur Remix)
+Date: 20241109
+Artist: Laur, Team Grimoire
+Genre: Music
+Album: Laur The BEST (Disc 02)
+Format: 48000:16:2
+mtime: 1784481683
+added: 1786043936
+song_end
+song_begin: dream-with-me.opus
+Time: 205.96
+Title: Dream with Me
+Date: 20211108
+Artist: EmoCosine
+Genre: Music
+Album: Love Kills U
+Format: 48000:16:2
+mtime: 1784481683
+added: 1786043936
+song_end
+song_begin: magenta-potion.opus
+Time: 211.22
+Title: MAGENTA POTION (Extended Mix)
+Date: 20211108
+Artist: EmoCosine
+Genre: Music
+Album: Love Kills U
+Format: 48000:16:2
+mtime: 1784481683
+added: 1786043936
+song_end
+song_begin: magenta-potion-xaev-remix.opus
+Time: 196.38
+Title: MAGENTA POTION (xaev Remix)
+Date: 20250430
+Artist: EmoCosine
+Genre: Music
+Album: Lovely Lover
+Format: 48000:16:2
+mtime: 1784481683
+added: 1786043936
+song_end
+song_begin: sound-chimera.opus
+Time: 307.84000000000003
+Title: Sound Chimera
+Date: 20200322
+Artist: Laur
+Genre: Music
+Album: The Angel's Message
+Format: 48000:16:2
+mtime: 1784481683
+added: 1786043936
+song_end
+song_begin: anybody-can-find-love.opus
+Time: 131.38
+Title: Anybody Can Find Love (except you.)
+Date: 20250916
+Artist: hkmori
+Genre: Music
+Album: Unrequited Love
+Format: 48000:16:2
+mtime: 1784481682
+added: 1786043936
+song_end
+song_begin: lost.opus
+Time: 186.3
+Title: Lost
+Date: 20250916
+Artist: hkmori
+Genre: Music
+Album: Unrequited Love
+Format: 48000:16:2
+mtime: 1784481683
+added: 1786043936
+song_end
+song_begin: carnation.opus
+Time: 244.02
+Title: carnation
+Date: 20200529
+Artist: AAAA
+Genre: Music
+Album: セーブデータとほうき星
+Format: 48000:16:2
+mtime: 1784481682
+added: 1786043936
+song_end
+end: jpop
+directory: piano
+mtime: 1784481569
+begin: piano
+song_begin: 【Deemo】Altale 弾いてみた [6fz5z8K-j6k].opus
+Time: 162.34
+Title: 【Deemo】Altale 弾いてみた
+Date: 20180408
+Artist: ふぃくしのん / phyxinon
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481569
+added: 1786043933
+song_end
+song_begin: 【Deemo】Aragami 弾いてみた [scLBjB5Q0Bo].opus
+Time: 120.8
+Title: 【Deemo】Aragami 弾いてみた
+Date: 20170702
+Artist: ふぃくしのん / phyxinon
+Genre: Film & Animation
+Format: 48000:16:2
+mtime: 1784481569
+added: 1786043933
+song_end
+song_begin: 【Deemo】Marigold 弾いてみた [4oPM8zTeois].opus
+Time: 156.48
+Title: 【Deemo】Marigold 弾いてみた
+Date: 20180609
+Artist: ふぃくしのん / phyxinon
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481569
+added: 1786043933
+song_end
+song_begin: 【ピアノ】conflict  弾いてみた [y5KGY-Azu2s].opus
+Time: 152.22
+Title: 【ピアノ】conflict  弾いてみた
+Date: 20220821
+Artist: ふぃくしのん / phyxinon
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481569
+added: 1786043933
+song_end
+song_begin: 【ピアノ】Grievous Lady 弾いてみた【Arcaea】 [olYJgKPaVF0].opus
+Time: 144.38
+Title: 【ピアノ】Grievous Lady 弾いてみた【Arcaea】
+Date: 20220508
+Artist: ふぃくしのん / phyxinon
+Genre: Music
+Format: 48000:16:2
+mtime: 1784481569
+added: 1786043933
+song_end
+end: piano
+song_begin: hol6fes-stage2.mp4
+Time: 222.016
+Format: 48000:f:2
+mtime: 1784481702
+added: 1786043937
+song_end

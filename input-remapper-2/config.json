@@ -1,5 +1,5 @@
 {
-    "version": "2.2.0",
+    "version": "2.2.1",
     "autoload": {
         "OM6229 Kanata Wireless WG9 ": "new preset",
         "AT Translated Set 2 keyboard": "preset"

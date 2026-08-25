@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, self, ... }:
 let
-	suckless = pkgs.lib.mapAttrs (name: _: pkgs.callPackage /etc/nixos/pkgs/${name} { })
-		(builtins.readDir /etc/nixos/pkgs);
+	suckless = pkgs.lib.mapAttrs (name: _: pkgs.callPackage ../pkgs/${name} { inherit self; })
+		(builtins.readDir ../pkgs);
 in
 {
 	services = {

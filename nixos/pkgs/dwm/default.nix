@@ -1,4 +1,4 @@
-{ pkgs }:
+{ pkgs, self ? null }:
 pkgs.dwm.overrideAttrs (old: {
-  src = /home/aergia/dotfiles/dwm;
+  src = self + "/dwm";
 })

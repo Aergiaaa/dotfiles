@@ -6,9 +6,12 @@
   outputs = { self, nixpkgs, ... }: {
     nixosConfigurations.lighthouse = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
+
+			specialArgs = { inherit self; }; # expose repo
+
       modules = [
-        ./configuration.nix
+        ./nixos/configuration.nix
       ];
     };
-  }
+  };
 }

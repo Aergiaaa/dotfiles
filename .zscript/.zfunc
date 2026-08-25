@@ -30,6 +30,9 @@ nx(){
 		up)
 			sudo nixos-rebuild switch $3
 			;;
+		f)
+			sudo nixos-rebuild switch --flake ~/dotfiles#lighthouse
+			;;
 	esac
 
 }

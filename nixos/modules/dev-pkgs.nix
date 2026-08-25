@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   programs.nix-ld = {
     enable = true;
@@ -11,11 +11,12 @@
 
 	virtualisation.docker.enable = true;
 	users.users.aergia.extraGroups = [ "docker" ];
+	systemd.services.docker.wantedBy = lib.mkForce [];
 
 	services.postgresql.enable = false;
 
   environment.systemPackages = with pkgs; [
-		file
+		file unzip
 
 		openssl
 
