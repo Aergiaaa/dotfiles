@@ -4,18 +4,7 @@
   imports =
     [ 
       ./hardware-configuration.nix
-			./modules/boot.nix
-			./modules/networking.nix
-			./modules/audio.nix
-			./modules/users.nix
-			./modules/dev-pkgs.nix
-			./modules/desktop.nix
-			./modules/wm.nix
-			./modules/color.nix
-			./modules/game.nix
-			./modules/ai.nix
-			./modules/mtp.nix
-			./modules/option.nix
+			./modules
     ];
 
   time.timeZone = "Asia/Jakarta";

@@ -16,30 +16,31 @@
 	services.postgresql.enable = false;
 
   environment.systemPackages = with pkgs; [
+		# file shit
 		file unzip
 
+		# ssl
 		openssl
 
+		# nvim
     neovim bob-nvim neovim-remote
 
+		# gnu and c
 		gcc gnumake clang-tools
 
-    go gopls templ
+		# rust
+		cargo
 
-		sqlc
+		# golang
+    go templ
 
-		redis postgresql
-
+		# db
+		redis postgresql sqlc
+		
+		# grep
 		ripgrep
 
-		lua-language-server bash-language-server shfmt
-
-		rust-analyzer
-
+		# js
 		nodejs
-		typescript-language-server tailwindcss-language-server emmet-language-server
-		prettier
-
-		ruff pyright
   ];
 }

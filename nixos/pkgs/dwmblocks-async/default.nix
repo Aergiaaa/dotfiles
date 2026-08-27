@@ -1,4 +1,4 @@
-{ lib, stdenv, pkg-config, libxcb, libxcb-util, self ? null }:
+{ lib, stdenv, pkg-config, libxcb, libxcb-util, self }:
 
 stdenv.mkDerivation	{
 	pname = "dwmblocks-async";
