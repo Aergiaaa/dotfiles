@@ -1,10 +1,12 @@
 picom -b &
 
-wal -i ~/pict/memship_wp/*June*without*&
+feh --bg-fill ~/pict/memship_wp/*June*2026.png 
 
 dwmblocks &
 
 dunst &
+
+mpd &
 
 slock -m "LOCKED" &
 
@@ -19,5 +21,8 @@ fi
 xset s off
 xset s noblank
 xset -dpms &
+
+xrdb -merge ~/.Xresources &
+xrdb -merge ~/.cache/wal/colors.Xresources &
 
 exec dwm > ~/.dwm.log 2>&1

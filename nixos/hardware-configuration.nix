@@ -38,6 +38,12 @@
     };
 
   fileSystems."/boot" =
+    { device = "/dev/disk/by-uuid/37e003ee-2c6a-4928-bb78-38ad3f68da5e";
+      fsType = "btrfs";
+      options = [ "subvol=@boot" ];
+    };
+
+  fileSystems."/boot/efi" =
     { device = "/dev/disk/by-uuid/D44E-4382";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];

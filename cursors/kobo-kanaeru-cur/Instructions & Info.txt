@@ -1,0 +1,23 @@
+❖ HOW TO CHANGE CURSOR SIZE?
+
+1. Click the Windows icon and search for "Mouse pointer size".
+2. Change the mouse pointer to size 1, 2, or 3 for better detail.
+3. Done.
+
+❖ HOW TO INSTALL & APPLY CURSOR?
+
+1. Extract the ZIP file and open the cursor folder.
+2. Right-click the "Install.inf" file, and choose "Install" in the menu. Discard any warning messages if they appear.
+3. Click the Windows icon and search for "Themes and related settings".
+4. Click the "Mouse Cursor".
+5. In the Mouse options, go to the "Pointers" tab.
+6. Use the drop-down menu to select the cursor theme and click OK. Agree with a message if it appears.
+7. Done, enjoy!
+
+------------------------------------------------
+
+Thank you for using the cursor! 🤍
+Designed by NOiiRE | 2024 © All Rights Reserved.
+
+◇ https://x.com/noiireism
+◇ https://noiire.carrd.co

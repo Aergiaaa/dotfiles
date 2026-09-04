@@ -236,6 +236,18 @@ vim.lsp.config('pyright', {
 	}
 })
 
+-- NIX
+vim.lsp.config('nil_ls', {
+	cmd = { 'nil' },
+	filetypes = { 'nix' },
+	root_markers = { 'flake.nix', 'flake.lock', '.git' },
+	settings = {
+		['nil'] = {
+			formatting = { commands = { 'nixfmt'} },
+		},
+	},
+})
+
 -- LAZY LOAD — enable each LSP only when its filetype is opened
 local servers = {
 	'lua_ls',
@@ -248,6 +260,7 @@ local servers = {
 	'templ',
 	'ruff',
 	'pyright',
+	'nil_ls',
 }
 
 for _, server in ipairs(servers) do

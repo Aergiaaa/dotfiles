@@ -9,38 +9,50 @@
     ];
   };
 
-	virtualisation.docker.enable = true;
-	users.users.aergia.extraGroups = [ "docker" ];
-	systemd.services.docker.wantedBy = lib.mkForce [];
+  virtualisation.docker.enable = true;
+  users.users.aergia.extraGroups = [ "docker" ];
+  systemd.services.docker.wantedBy = lib.mkForce [ ];
 
-	services.postgresql.enable = false;
+  services.postgresql.enable = false;
 
   environment.systemPackages = with pkgs; [
-		# file shit
-		file unzip
+    # file shit
+    file
+    unzip
 
-		# ssl
-		openssl
+    # ssl
+    openssl
 
-		# nvim
-    neovim bob-nvim neovim-remote
+    # nvim
+    neovim
+    bob-nvim
+    neovim-remote
 
-		# gnu and c
-		gcc gnumake clang-tools
+    # gnu and c
+    gcc
+    gnumake
+    clang-tools
 
-		# rust
-		cargo
+    # rust
+    cargo
 
-		# golang
-    go templ
+    # golang
+    go
+    templ
 
-		# db
-		redis postgresql sqlc
-		
-		# grep
-		ripgrep
+    # db
+    redis
+    postgresql
+    sqlc
 
-		# js
-		nodejs
+    # grep
+    ripgrep
+
+    # js
+    nodejs
+
+    # nix
+    nil
+    nixfmt
   ];
 }

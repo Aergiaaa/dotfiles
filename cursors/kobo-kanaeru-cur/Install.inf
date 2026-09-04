@@ -1,0 +1,55 @@
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%,%10%\%CUR_DIR%\%pin%,%10%\%CUR_DIR%\%person%"
+
+[Scheme.Cur]
+Kobo normal.ani
+Kobo help.ani
+Kobo work.ani
+Kobo busy.ani
+Kobo text.ani
+Kobo unavailable.ani
+Kobo vert.ani
+Kobo horz.ani
+Kobo dgn1.ani
+Kobo dgn2.ani
+Kobo move.ani
+Kobo link.ani
+Kobo precision.ani
+Kobo hand.ani
+Kobo alt.ani
+Kobo location.ani
+Kobo person.ani
+
+[Scheme.Txt]
+
+[Strings]
+CUR_DIR       = "Cursors\Kobo Kanaeru Cursor"
+SCHEME_NAME   = "Kobo Kanaeru Cursor"
+pointer       = "Kobo normal.ani"
+help          = "Kobo help.ani"
+work          = "Kobo work.ani"
+busy          = "Kobo busy.ani"
+text          = "Kobo text.ani"
+unavailiable  = "Kobo unavailable.ani"
+vert          = "Kobo vert.ani"
+horz          = "Kobo horz.ani"
+dgn1          = "Kobo dgn1.ani"
+dgn2          = "Kobo dgn2.ani"
+move          = "Kobo move.ani"
+link          = "Kobo link.ani"
+cross         = "Kobo precision.ani"
+hand          = "Kobo hand.ani"
+alternate     = "Kobo alt.ani"
+pin           = "Kobo location.ani"
+person        = "Kobo person.ani"

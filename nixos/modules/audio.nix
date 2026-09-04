@@ -1,16 +1,19 @@
 { pkgs, ... }:
 {
-	security.rtkit.enable = true;
+  security.rtkit.enable = true;
 
   services.pipewire = {
     enable = true;
     pulse.enable = true;
 
-		alsa  = {
-			enable = true;
-			support32Bit = true;
-		};
+    alsa = {
+      enable = true;
+      support32Bit = true;
+    };
   };
 
-environment.systemPackages = with pkgs; [ pavucontrol mpv ];
+  environment.systemPackages = with pkgs; [
+    pavucontrol
+    mpv
+  ];
 }

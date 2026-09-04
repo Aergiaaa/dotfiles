@@ -102,7 +102,7 @@ map('n', '<leader>ld', ':FzfLua lsp_document_symbols<CR>')
 map('n', '<leader>lc', ':FzfLua lsp_code_actions<CR>')
 map('n', '<leader>li', ':FzfLua lsp_implementations<CR>')
 map('n', '<leader>lt', ':FzfLua lsp_typedefs<CR>')
-map('n', '<leader>lf', ':FzfLua lsp_definitions<CR>')
+map('n', '<leader>ll', ':FzfLua lsp_definitions<CR>')
 map('n', '<leader>lr', ':FzfLua lsp_references<CR>')
 map('n', '<leader>gg', function() fzf.grep({ cwd = buf_dir() }) end)
 map('n', '<leader>fp', function()
@@ -125,7 +125,7 @@ local nt = require 'nvim-treesitter'
 nt.setup {
 	install_dir = vim.fn.stdpath('data') .. '/site'
 }
-nt.update { 'go', 'templ', 'rust', 'lua', 'c', 'bash', 'asm', 'html', 'javascript', 'typescript', 'tsx' }
+nt.update { 'go', 'templ', 'rust', 'lua', 'c', 'bash', 'asm', 'html', 'javascript', 'typescript', 'tsx', 'nix' }
 vim.api.nvim_create_autocmd('FileType', {
 	callback = function()
 		pcall(vim.treesitter.start)
