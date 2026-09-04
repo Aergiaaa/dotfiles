@@ -10,6 +10,7 @@
     ./desktop.nix
     ./dev-pkgs.nix
     ./game.nix
+		./lsp.nix
     ./mtp.nix
     ./networking.nix
     ./option.nix

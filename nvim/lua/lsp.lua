@@ -243,7 +243,7 @@ vim.lsp.config('nil_ls', {
 	root_markers = { 'flake.nix', 'flake.lock', '.git' },
 	settings = {
 		['nil'] = {
-			formatting = { commands = { 'nixfmt'} },
+			formatting = { commands = { 'nixfmt' } },
 		},
 	},
 })

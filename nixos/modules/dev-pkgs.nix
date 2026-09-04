@@ -28,18 +28,6 @@
     bob-nvim
     neovim-remote
 
-    # gnu and c
-    gcc
-    gnumake
-    clang-tools
-
-    # rust
-    cargo
-
-    # golang
-    go
-    templ
-
     # db
     redis
     postgresql
@@ -47,12 +35,5 @@
 
     # grep
     ripgrep
-
-    # js
-    nodejs
-
-    # nix
-    nil
-    nixfmt
   ];
 }
