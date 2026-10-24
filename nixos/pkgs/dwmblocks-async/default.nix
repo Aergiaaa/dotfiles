@@ -1,13 +1,22 @@
-{ lib, stdenv, pkg-config, libxcb, libxcb-util, self }:
+{
+  stdenv,
+  pkg-config,
+  libxcb,
+  libxcb-util,
+  self,
+}:
 
-stdenv.mkDerivation	{
-	pname = "dwmblocks-async";
-	version = "local";
+stdenv.mkDerivation {
+  pname = "dwmblocks-async";
+  version = "local";
 
-	src = self + "/dwmblocks-async";
+  src = self + "/dwmblocks-async";
 
-	nativeBuildInputs = [ pkg-config ];
-  buildInputs = [ libxcb libxcb-util ];
+  nativeBuildInputs = [ pkg-config ];
+  buildInputs = [
+    libxcb
+    libxcb-util
+  ];
 
   installPhase = ''
     mkdir -p $out/bin

@@ -5,6 +5,12 @@ vim.api.nvim_create_autocmd('LspAttach', {
 	callback = function(ev)
 		local client = vim.lsp.get_client_by_id(ev.data.client_id)
 
+		-- vue: use prettier via formatprg (ggVGgq), disable lsp formatting to avoid timeout (vue_ls needs node_modules ts project)
+		if client and client.name == 'vue_ls' then
+			client.server_capabilities.documentFormattingProvider = false
+			client.server_capabilities.documentRangeFormattingProvider = false
+		end
+
 		local force = client and (client.name == 'templ' or client.name == 'tailwindcss' or client.name == 'emmet_ls')
 
 		if client and (force or client:supports_method('textDocument/completion')) then
@@ -93,6 +99,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 -- LUA
 vim.lsp.config('lua_ls', {
 	cmd = { 'lua-language-server' },
+	filetypes = { 'lua' },
 	settings = {
 		Lua = {
 			runtime = {
@@ -113,7 +120,7 @@ vim.lsp.config('lua_ls', {
 			},
 			telemetry = {
 				enable = false,
-			}
+			},
 		}
 	}
 })
@@ -159,6 +166,10 @@ vim.lsp.config('rust_analyzer', {
 			procMacro = {
 				enable = true
 			},
+			completion = {
+				callable = { snippets = "fill_arguments" },
+				autoimport = { enable = true },
+			},
 		}
 	}
 })
@@ -169,12 +180,16 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 vim.lsp.config('emmet_ls', {
 	cmd = { 'emmet-language-server', '--stdio' },
 	capabilities = capabilities,
-	filetypes = { 'html', 'css', 'templ' },
+	filetypes = { 'html', 'css', 'templ', 'vue', 'javascriptreact', 'typescriptreact' },
 	root_markers = { '.git', 'package.json' }
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "html", "css" },
+	pattern = {
+		"html", "css",
+		"javascript", "typescript", "vue", "json",
+		"javascriptreact", "typescriptreact"
+	},
 	callback = function()
 		vim.bo.formatprg = "prettier --stdin-filepath %"
 	end
@@ -183,12 +198,13 @@ vim.api.nvim_create_autocmd("FileType", {
 -- TAILWIND
 vim.lsp.config('tailwindcss', {
 	cmd = { 'tailwindcss-language-server', '--stdio' },
-	filetypes = { 'html', 'css', 'templ', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact' },
+	filetypes = { 'html', 'css', 'templ', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'vue' },
 	root_markers = { 'tailwind.config.js', 'tailwind.config.ts', 'postcss.config.js', 'package.json', '.git' },
 	settings = {
 		tailwindCSS = {
 			includeLanguages = {
 				templ = 'html', -- treat templ as html for class completions
+				vue = 'html',
 			},
 		},
 	},
@@ -196,18 +212,65 @@ vim.lsp.config('tailwindcss', {
 
 
 -- JS/TS
+local vue_plugin = vim.fn.isdirectory('node_modules/@vue/typescript-plugin') == 1
+		and ...
+		or vim.fn.exepath('vue-language-server')
 vim.lsp.config('ts_ls', {
 	cmd = { 'typescript-language-server', '--stdio' },
 	filetypes = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'vue' },
 	root_markers = { 'tsconfig.json', 'jsconfig.json', 'package.json', '.git' },
 	init_options = {
 		hostInfo = 'neovim',
+		plugins = {
+			{
+				name = '@vue/typescript-plugin',
+				location = vue_plugin,
+				languages = { 'vue' },
+			},
+		},
 	},
 	settings = {
 		typescript = {
 			inlayHints = { includeInlayParameterNameHints = 'all' }
 		}
 	}
+})
+
+-- VUE (hybrid mode, requires ts_ls + handler per nvim-lspconfig vue_ls.lua)
+vim.lsp.config('vue_ls', {
+	cmd = { 'vue-language-server', '--stdio' },
+	filetypes = { 'vue' },
+	root_markers = { 'package.json' },
+	on_init = function(client)
+		local retries = 0
+		local function typescriptHandler(_, result, context)
+			local ts_client = vim.lsp.get_clients({ bufnr = context.bufnr, name = 'ts_ls' })[1]
+					or vim.lsp.get_clients({ bufnr = context.bufnr, name = 'vtsls' })[1]
+					or vim.lsp.get_clients({ bufnr = context.bufnr, name = 'typescript-tools' })[1]
+			if not ts_client then
+				if retries <= 10 then
+					retries = retries + 1
+					vim.defer_fn(function()
+						typescriptHandler(_, result, context)
+					end, 100)
+				else
+					vim.notify('Could not find ts_ls required by vue_ls.', vim.log.levels.ERROR)
+				end
+				return
+			end
+			local param = unpack(result)
+			local id, command, payload = unpack(param)
+			ts_client:exec_cmd({
+				title = 'vue_request_forward',
+				command = 'typescript.tsserverRequest',
+				arguments = { command, payload },
+			}, { bufnr = context.bufnr }, function(_, r)
+				local response_data = { { id, r and r.body } }
+				client:notify('tsserver/response', response_data)
+			end)
+		end
+		client.handlers['tsserver/request'] = typescriptHandler
+	end,
 })
 
 -- PY
@@ -248,12 +311,35 @@ vim.lsp.config('nil_ls', {
 	},
 })
 
+-- C
+vim.lsp.config('clangd', {
+	cmd = { 'clangd', '--background-index', '--clang-tidy', '--header-insertion=never' },
+	filetypes = { 'c', 'cpp' },
+	root_markers = { 'Makefile', '.git' }
+})
+
+-- ZIG
+vim.lsp.config('zls', {
+	cmd = { 'zls' },
+	filetypes = { 'zig', 'zir' },
+	root_markers = { 'build.zig', 'build.zig.zon', '.git' }
+})
+
+-- PHP
+vim.lsp.config('phpantom', {
+	cmd = { 'phpantom_lsp' },
+	filetypes = { 'php', 'blade' },
+	root_markers = { '.phpantom.toml', 'composer.json', 'artisan', '.git' }
+})
+
 -- LAZY LOAD — enable each LSP only when its filetype is opened
 local servers = {
+	'clangd',
+	'zls',
+	'phpantom',
 	'lua_ls',
 	'gopls',
 	'rust_analyzer',
-	'clangd',
 	'bashls',
 	'emmet_ls',
 	'ts_ls',
@@ -261,6 +347,8 @@ local servers = {
 	'ruff',
 	'pyright',
 	'nil_ls',
+	'vue_ls',
+	'tailwindcss'
 }
 
 for _, server in ipairs(servers) do

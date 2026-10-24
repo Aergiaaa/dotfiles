@@ -14,8 +14,6 @@ if ! pgrep -u "$USER" ssh-agent > /dev/null; then
 	eval "$(ssh-agent)"
 fi
 
-/usr/lib/xfce-polkit/xfce-polkit &
-
 (sleep 2 && input-remapper-control --command autoload) &
 
 xset s off

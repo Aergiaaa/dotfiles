@@ -2,17 +2,18 @@ vim.pack.add({
 	{ src = "https://github.com/AlphaTechnolog/pywal.nvim" },
 	{ src = "https://github.com/nvim-lualine/lualine.nvim" },
 	{ src = "https://github.com/stevearc/oil.nvim" },
-	{ src = "https://github.com/echasnovski/mini.pick" },
-	{ src = "https://github.com/echasnovski/mini.extra" },
-	{ src = "https://github.com/neovim/nvim-lspconfig" },
+	{ src = "https://github.com/nvim-mini/mini.pick" },
+	{ src = "https://github.com/nvim-mini/mini.extra" },
+	{ src = "https://github.com/nvim-mini/mini.diff" },
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
-	{ src = "https://github.com/mason-org/mason.nvim" },
 	{ src = "https://github.com/nvim-lua/plenary.nvim" },
 	{ src = "https://github.com/goolord/alpha-nvim" },
 	{ src = "https://github.com/L3MON4D3/LuaSnip" },
 	{ src = "https://github.com/mbbill/undotree" },
 	{ src = "https://github.com/ibhagwan/fzf-lua" },
 	{ src = "https://github.com/brenoprata10/nvim-highlight-colors" },
+	{ src = "https://github.com/folke/persistence.nvim" },
+	-- { src = "https://github.com/sindrets/diffview.nvim" },
 	{
 		src = "https://github.com/ThePrimeagen/harpoon",
 		branch = "harpoon2",
@@ -52,6 +53,14 @@ map('n', '<leader>e', ':Oil --float<CR>', { silent = true })
 require 'mini.pick'.setup()
 require 'mini.extra'.setup()
 
+local diff = require 'mini.diff'
+diff.setup({
+	view = {
+		style = 'number'
+	}
+})
+
+map('n', '<leader>o', diff.toggle_overlay)
 map('n', '<leader>\\', ':Pick buffers<CR>')
 
 -- fzf-lua
@@ -125,7 +134,7 @@ local nt = require 'nvim-treesitter'
 nt.setup {
 	install_dir = vim.fn.stdpath('data') .. '/site'
 }
-nt.update { 'go', 'templ', 'rust', 'lua', 'c', 'bash', 'asm', 'html', 'javascript', 'typescript', 'tsx', 'nix' }
+nt.update { 'go', 'templ', 'rust', 'lua', 'c', 'bash', 'asm', 'html', 'javascript', 'typescript', 'tsx', 'nix', 'vue', 'css', 'scss', 'json' }
 vim.api.nvim_create_autocmd('FileType', {
 	callback = function()
 		pcall(vim.treesitter.start)
@@ -140,14 +149,15 @@ require 'lualine'.setup {
 	}
 }
 
+local per = require 'persistence'
+per.setup()
+map("n", "<leader>pp", function() per.load({ last = true }) end)
+
 -- undotree
 map('n', '<leader>;', vim.cmd.UndotreeToggle)
 
 -- pywal
 require 'pywal'.setup()
-
--- mason
-require 'mason'.setup()
 
 -- colors
 require 'nvim-highlight-colors'.setup()

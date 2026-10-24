@@ -1,5 +1,7 @@
 { pkgs, lib, ... }:
 {
+  documentation.man.cache.enable = true;
+
   programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [
@@ -20,6 +22,9 @@
     file
     unzip
 
+    # tree sitter
+    tree-sitter
+
     # ssl
     openssl
 
@@ -32,8 +37,37 @@
     redis
     postgresql
     sqlc
+    sqlite
 
     # grep
     ripgrep
+
+    # python cmd
+    python3
   ];
+
+  # PBPhp
+  services.mysql = {
+    enable = true;
+    package = pkgs.mariadb;
+
+    ensureDatabases = [ "uin_db" ];
+    ensureUsers = [
+      {
+        name = "appuser";
+        ensurePermissions = {
+          "uin_db.*" = "ALL PRIVILEGES";
+        };
+      }
+    ];
+
+    # Optional: initial SQL script (runs once on first start)
+    initialScript = pkgs.writeText "init.sql" ''
+      CREATE DATABASE IF NOT EXISTS myapp;
+      CREATE USER IF NOT EXISTS 'appuser'@'localhost' IDENTIFIED BY 'secret';
+      GRANT ALL PRIVILEGES ON myapp.* TO 'appuser'@'localhost';
+      FLUSH PRIVILEGES;
+    '';
+  };
+  systemd.services.mysql.wantedBy = lib.mkForce [ ];
 }

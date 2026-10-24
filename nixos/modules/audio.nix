@@ -15,5 +15,7 @@
   environment.systemPackages = with pkgs; [
     pavucontrol
     mpv
+
+    yt-dlp
   ];
 }

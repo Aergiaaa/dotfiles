@@ -10,6 +10,7 @@ in
 {
   boot = {
     kernelPackages = pkgs.linuxPackages_zen;
+    kernelParams = [ "pcie_aspm=off" ];
 
     loader = {
       grub = {
@@ -20,12 +21,20 @@ in
         configurationLimit = 10;
         copyKernels = false; # keeping kernel in /nix/store
         theme = falloutTheme;
+
+        extraGrubInstallArgs = [
+          "--disable-shim-lock"
+          "--modules=normal tpm fat part_gpt part_msdos all_video efi_gop efi_uga gfxterm gfxmenu search configfile"
+        ];
       };
 
       efi = {
         canTouchEfiVariables = true;
         efiSysMountPoint = "/boot/efi";
       };
+
     };
   };
+
+  environment.systemPackages = with pkgs; [ sbctl ];
 }

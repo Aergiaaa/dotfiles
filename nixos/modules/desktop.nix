@@ -29,6 +29,7 @@ in
       lm_sensors
       rmpc
       mpd
+      yt-dlp
       libnotify
       git
       gh
@@ -43,9 +44,12 @@ in
       dunst
       picom
       feh
+      nsxiv
       fzf
       xrdb
       fd
       gnome-keyring
+
+      kdePackages.kdenlive
     ]);
 }

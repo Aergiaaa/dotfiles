@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ ... }:
 {
   # cleanup
   nix.gc = {

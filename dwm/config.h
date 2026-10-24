@@ -38,6 +38,8 @@ static const Rule rules[] = {
     {"steam", NULL, NULL, 1 << 3, 0, -1},
     {"zoom", NULL, NULL, 1 << 3, 0, -1},
     {"mpv", NULL, NULL, 1 << 4, 0, -1},
+    {"mpv", NULL, NULL, 1 << 4, 0, -1},
+    {NULL, "wallpick", NULL, 0, 1, -1},
 };
 
 /* layout(s) */
@@ -78,7 +80,7 @@ static char dmenumon[2] =
     "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = {
     "dmenu_run", "-m",  dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf",
-    col_fonts,   "-sb", col_main, "-sf", col_fonth, "-l",  "3",       NULL};
+    col_fonts,   "-sb", col_main, "-sf", col_fonth, "-l",  "7",       NULL};
 
 static const char *termcmd[] = {"st", "-e", "zsh", NULL};
 static const char *browserlaunch[] = {"qutebrowser", NULL};
@@ -92,6 +94,10 @@ static const char *volmute[] = {"volume.sh", "mute", NULL};
 
 static const char *brightup[] = {"brightness.sh", "up", "5", NULL};
 static const char *brightdown[] = {"brightness.sh", "down", "5", NULL};
+
+static const char *termmenu[] = {"termmenu.sh", NULL};
+
+static const char *wallpick[] = {"wallpick.sh", NULL};
 
 static const char *ctrlpgup[] = {"xdotool", "key", "ctrl+Page_Up", NULL};
 static const char *ctrlpgdn[] = {"xdotool", "key", "ctrl+Page_Down", NULL};
@@ -112,8 +118,10 @@ static const Key keys[] = {
     {MODKEY, XF86XK_AudioRaiseVolume, spawn, {.v = brightup}},
     {MODKEY, XF86XK_AudioLowerVolume, spawn, {.v = brightdown}},
     {MODKEY, XK_p, spawn, {.v = dmenucmd}},
+    {MODKEY, XK_l, spawn, {.v = termmenu}},
     {MODKEY, XK_Return, spawn, {.v = termcmd}},
     {MODKEY, XK_o, spawn, {.v = browserlaunch}},
+    {MODKEY, XK_k, spawn, {.v = wallpick}},
     {MODKEY, XK_n, spawn, {.v = ctrlpgdn}},
     {MODKEY, XK_m, spawn, {.v = ctrlpgup}},
     {MODKEY, XK_b, togglebar, {0}},

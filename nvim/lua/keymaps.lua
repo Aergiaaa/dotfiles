@@ -44,11 +44,11 @@ map({ 'n', 'i' }, '<C-s>', function() vim.lsp.buf.signature_help() end)
 map('n', '<leader>ln', function() vim.lsp.buf.rename() end)
 map('n', '<leader>fa', function()
 	local ft = vim.bo.filetype
-	local fmtprg_fts = { sh = true, bash = true, html = true, css = true, javascript = true, typescript = true }
+	local fmtprg_fts = { sh = true, bash = true, html = true, css = true, javascript = true, typescript = true, vue = true, json = true }
 	if fmtprg_fts[ft] then
 		vim.cmd('normal! ggVGgq')
 	else
-		vim.lsp.buf.format()
+		vim.lsp.buf.format({ async = true })
 	end
 end
 )
@@ -64,6 +64,13 @@ map({ 'n', 'v', 'x' }, '<leader>y', '"+y<CR>')
 map({ 'n', 'v', 'x' }, '<leader>d', '"+d<CR>')
 map('i', '<C-p>', '<Esc>', { noremap = true })
 map('n', '<C-p>', 'i', { noremap = true })
+
+map('n', '<leader>n', function()
+	local cmd = vim.fn.input('Rename buf: ')
+	if cmd ~= '' then
+		vim.cmd('file ' .. cmd)
+	end
+end)
 
 
 -- terminal mode
@@ -84,6 +91,8 @@ end)
 map('t', '<C-p>', '<C-\\><C-n>', { desc = "switch terminal mode" })
 map('n', '<leader>q', ':bd<CR>', { desc = "clear buffer" })
 map('n', '<leader>Q', ':bd!<CR>', { desc = "clear buffer" })
+
+map('n', '\'\'', ':Alpha<CR>')
 
 -- wrapper
 vim.keymap.set('v', '<leader>]', function()
